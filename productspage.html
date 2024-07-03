@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Reviant Beauty - Your Radiant Makeup </title>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <style>
+    /* Internal CSS */
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    html, body {
+      background-color: #ffffff;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .navbar {
+      background-color: #e3c4be;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px; 
+      width: auto;
+      margin: 0 auto; 
+      max-width: auto;
+    }
+
+    .search-box{
+        width: 280px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f3f3f3;
+        border-radius: 20px;
+        padding: 0px 20px;
+        margin-left: auto;
+    }
+
+    .search-box input{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .search-box button {
+        color: #985f4b;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .nav-btns{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-btns a{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #fed2d1;
+        color: #985f4b;
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    .nav-btns a i{
+        margin-top: 2px;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #985f4b;
+      font-size: 1.8rem;
+      font-weight: 800;
+      object-fit: contain;
+      object-position: center;
+      margin: 30px 0;
+    }
+
+    #main{
+        min-height: 500px;
+        align-items: center;
+        padding: 20px 40px; 
+        width: auto;
+        margin: 0 auto; 
+        max-width: auto;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .main-img img{
+        width: auto;
+        height: auto;
+        border-radius: 30px;
+        max-height: 100%;
+        max-width: 100%;
+        object-position: center;
+        object-fit: fill;
+    }
+
+    .main-text text{
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .main-text h1{
+        font-size: 50px;
+        color:#985f4b;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .main-text p{
+        font-size: 30px;
+        color:#985f4b;
+        margin: 10px 0;
+    }
+
+    .products {
+      background-color: #e3c4be;
+      color: #985f4b;
+      padding: 60px 10px;
+    }
+    .product-card {
+      border: none;
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+    .product-card img {
+      border-radius: 20px;
+    }
+    .product-card-title {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #985f4b;
+    }
+    .product-card-price {
+      font-size: 1rem;
+      color: #6c757d;
+    }
+
+    .pricing {
+      padding: 60px 0;
+      background-color: #cc9c9f79;
+      text-align: center;
+      color: #985f4b;
+      align-items: center;
+      object-position: center;
+    }
+
+    .pricing .list-unstyled {
+      padding-left: 0;
+      list-style: none;
+      color: #985f4b;
+    }
+
+    .pricing h2 {
+      color: #985f4b;
+      margin-bottom: 30px;
+    }
+    .pricing .card {
+      color: #985f4b;
+      border: none;
+    }
+    .pricing .card-title {
+      font-size: 1.5rem;
+      color: #985f4b;
+    }
+    .pricing .card-text {
+      font-size: 1rem;
+      color: #6c757d;
+    }
+
+    .pricing .btn {
+      background-color: #985f4b;
+      border: none;
+    }
+
+    .contact {
+      background-color: #e3c4be;
+      padding: 50px 0;
+      color: #985f4b;
+    }
+
+    .contact h2, .contact label {
+      color: #985f4b;
+    }
+
+    .contact .form-control {
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact .btn {
+      background-color: #985f4b;
+      border: none;
+    }
+
+    footer {
+      background-color: #f5e0dc;
+    }
+    footer p {
+      margin: 0;
+      color: #fff;
+    }
+
+    @media (max-width: 1100px) {
+      .navbar {
+        padding: 10px 20px;
+      }
+      .main-text h1 {
+        font-size: 30px;
+      }
+      .main-text p {
+        font-size: 20px;
+      }
+      .products {
+        padding: 30px 5px;
+      }
+      .pricing {
+        padding: 30px 0;
+      }
+      .contact {
+        padding: 30px 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a class="navbar-brand" href="#">Reviant Beauty</a>
+    <form class="search-box">
+        <input type="text" placeholder="Search Product Here" required/>
+        <buton>
+            <i class="fas fa-search"></i>
+        </buton>
+    </form>
+    <div class="nav-btns">
+        <a href="#" class="nav-user">
+            <i class="fa-solid fa-user"></i>
+        </a>
+        <a href="#" class="nav-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="main">
+    <div class="main-text">
+        <h1>Welcome to Reviant Beauty</h1>
+        <p>Your Radiant Makeup starts here</p>
+    </div>
+
+    <div class="main-img">
+        <img src="https://shorturl.at/aMQn3"/>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="product-card">
+            <img src="https://images-cdn.ubuy.ae/6487446d5540637b60698158-mac-matte-lipstick-whirl-0-1-ounce-3.jpg" class="img-fluid" alt="Fluffmatte Lipstick">
+            <h5 class="product-card-title">Fluffmatte Lipstick</h5>
+            <p class="product-card-price">Php 399.00</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="product-card">
+            <img src="https://m.maccosmetics.com.ph/media/export/cms/products/640x600/mac_sku_M522_640x600_0.jpg" class="img-fluid" alt="Airy Foundation">
+            <h5 class="product-card-title">Airy Foundation</h5>
+            <p class="product-card-price">Php 699.00</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="product-card">
+            <img src="https://shorturl.at/1ij3X" class="img-fluid" alt="Aura Blush">
+            <h5 class="product-card-title">Aura Blush</h5>
+            <p class="product-card-price">Php 299.00</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="product-card">
+            <img src="https://shorturl.at/gDyQY" class="img-fluid" alt="Flawless Eyeshadow">
+            <h5 class="product-card-title">Flawless Eyeshadow</h5>
+            <p class="product-card-price">Php 599.00</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="product-card">
+            <img src="https://shorturl.at/VgY8P" class="img-fluid" alt="Lock Mascara">
+            <h5 class="product-card-title">Lock Mascara</h5>
+            <p class="product-card-price">Php 350.00</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="product-card">
+            <img src="https://static.beautytocare.com/media/catalog/product/m/a/makeup-revolution-reloaded-highlighter-peach-lights-10g.jpg" class="img-fluid" alt="Glowy Highlighter">
+            <h5 class="product-card-title">Glowy Highlighter</h5>
+            <p class="product-card-price">Php 300.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Pricing Plans</h2>
+      <p>Discover our affordable and luxurious pricing plans.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4 d-flex align-items-stretch mb-4">
+        <div class="card">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">Essentials Bundle</h3>
+            <p class="card-text">Php 1299.99</p>
+            <ul class="list-unstyled">
+              <li>2 Lipsticks</li>
+              <li>2 Foundations</li>
+              <li>2 Blushes</li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex align-items-stretch mb-4">
+        <div class="card">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">Complete Collection</h3>
+            <p class="card-text">Php 1399.99</p>
+            <ul class="list-unstyled">
+              <li>3 Lipsticks</li>
+              <li>3 Foundations</li>
+              <li>3 Blushes</li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex align-items-stretch mb-4">
+        <div class="card">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">Makeup Artist Kit</h3>
+            <p class="card-text">Php 1599.99</p>
+            <ul class="list-unstyled">
+              <li>4 Lipsticks</li>
+              <li>4 Foundations</li>
+              <li>4 Blushes</li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you!</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <span class="copyright">© 2024 Reviant Beauty. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript Section -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/3RYQ6f5e5d5e5r5E5r5e5f6f6e5d6e7G6K5d6E6K6Q7G5d6G7d6Q4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-+5QW2HPzTI05VZ/Og0I5MVz5Oc71i6J5dE7Rg5H5K7R5d6E5f5d7e5D5e5G7D6Q5Q6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-5D5e5E5e5E5e5E5e5d6E5d6E5d6Q7e5E5D6E5d6E5d6e5d6e5d6Q6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+</body>
+</html>

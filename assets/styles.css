@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    background-color: #004225; /* Adjusted background color to match FEU green */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ic-Login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ic-Login-header__logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.ic-Login-header__links {
+    text-align: right;
+}
+
+.ic-Login__link {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+.ic-Login__link:hover {
+    text-decoration: underline;
+}
+
+/* Form */
+.ic-Form-control {
+    margin-bottom: 15px;
+    
+}
+
+.ic-Label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ic-Input {
+    width: 1000px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Login Actions */
+.ic-Login__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ic-Login__forgot {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.ic-Login__forgot a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ic-Login__forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+.Button--login {
+    background-color: #1b4d32;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; 
+    margin-top: 10px;
+}
+
+.Button--login:hover {
+    background-color: #0e2d1f;
+}
+
+/* Footer Links */
+.ic-Login-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ic-Login-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.ic-Login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ic-Login-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ic-Login-header__logo {
+        margin-bottom: 10px;
+    }
+}

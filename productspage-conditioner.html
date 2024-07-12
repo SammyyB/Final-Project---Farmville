@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    
 
     <!--==Internal CSS-->
     <style>
@@ -19,8 +18,7 @@
             font-optical-sizing: auto;
             font-weight: weight;
             font-style: normal;
-            font-variation-settings:
-            "wdth" 100;
+            font-variation-settings: "wdth" 100;
             margin: 0;
             padding: 0;
         }
@@ -33,7 +31,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .header img {
-            height:max-content;
+            height: max-content;
             max-height: 40px; 
             margin-left: 50px; 
         }
@@ -83,7 +81,7 @@
             width: 20px;
         }
         .golden-line {
-            height: 4px;
+            height: 2px;
             background-color: #C49F24;
             margin: 0;
         }
@@ -104,7 +102,56 @@
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto; 
+            margin: 0 auto;
+        }
+        .golden-section {
+            background: linear-gradient(to bottom, #CEAE37, #FFE3B3);
+            padding: 20px 0;
+            height: 0;
+        }
+        .products-section {
+            background-color: #D21885;
+            padding: 20px 0;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            width: 300px;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .product-card h3 {
+            color: #D21885;
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .product-card .stars {
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+        .product-card button {
+            background-color: #D21885;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
         }
         .footer {
             text-align: center;
@@ -113,7 +160,7 @@
             color: #333;
         }
         @media (min-width: 1024px) { /* For larger screens like laptop */
-            .header img{
+            .header img {
                 max-height: 50px;
             }
             .search-bar {
@@ -124,6 +171,9 @@
             }
             .nav a {
                 font-size: 24px; 
+            }
+            .content img {
+                width: 100%;
             }
         }
     </style>
@@ -143,7 +193,7 @@
         </div>
     </div>
 
-    <div class="golden-line"></div> <!-- Golden line added here -->
+    <div class="golden-line"></div> 
 
     <div class="banner">
         <h1>OUR CONDITIONER COLLECTION</h1>
@@ -151,6 +201,61 @@
 
     <div class="content">
         <img src="https://shorturl.at/MPloK" alt="Conditioner Collection">
+    </div>
+
+    <div class="golden-section"></div>
+
+    <div class="products-section">
+        <div class="products">
+            <div class="product-card">
+                <img src="https://shorturl.at/qOHc9" alt="Product 1">
+                <h3>Cream Silk Ultimate Reborn Standout Straight Tri-Oleo Conditioner</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product-card">
+                <img src="https://shorturl.at/mdDgQ" alt="Product 2">
+                <h3>Cream Silk Ultimate Reborn Dry Damage Control Tri-Oleo Conditioner</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product-card">
+                <img src="https://shorturl.at/0AURt" alt="Product 3">
+                <h3>Cream Silk Ultimate Reborn Hairfall Defense Tri-Oleo Conditioner</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product-card">
+                <img src="https://shorturl.at/WjhLH" alt="Product 4">
+                <h3>Cream Silk Ultimate Reborn Dry Rescue Tri-Oleo Conditioner</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <button>BUY NOW</button>
+            </div>
+        </div>
     </div>
 
     <div class="footer">

@@ -17,26 +17,26 @@ body {
 }
 .header img {
     height: max-content;
-    max-height: 40px; 
-    margin-left: 50px; 
+    max-height: 40px;
+    margin-left: 50px;
 }
-
 .header a {
     padding: 20px;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 100px;
 }
-
 .nav {
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    align-items: center; /* Center align items vertically */
+    justify-content: center;
 }
 .nav a {
+    font-size: 20px;
     text-decoration: none;
     color: #D21885;
     font-weight: bold;
-    font-size: 16px;
 }
 .search-bar {
     display: flex;
@@ -45,7 +45,7 @@ body {
     border: 2px solid #CF388D;
     padding: 5px;
     border-radius: 25px;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 .search-bar input {
     border: none;
@@ -73,8 +73,9 @@ body {
 .banner {
     text-align: center;
     background-color: white;
-    color: #CF388D;
-    padding: 0; 
+    color: #D21885;
+    padding-bottom: 0; 
+    padding-top: 0;
     margin: 0; 
 }
 .content {
@@ -84,10 +85,11 @@ body {
     margin: 0; 
 }
 .content img {
+    padding-top: 0;
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin-top: -10px; 
 }
 .golden-section {
     background: linear-gradient(to bottom, #CEAE37, #FFE3B3);
@@ -113,7 +115,7 @@ body {
     padding: 20px;
     width: 300px; 
     margin-bottom: 20px; 
-    position: relative; /* Required for absolute positioning */
+    position: relative; 
 }
 .product-card img {
     width: 100%;
@@ -152,29 +154,132 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
-.pink-line{
-    height: 4px;
-    background-color: #D21885;
-    margin: 0;
-}
 .footer {
+    background-color: #fff;
+    color: #D21885;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    color: #333;
+    border-top: 4px solid #D21885;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto; /* Center the container with equal margins */
+    max-width: 1200px; /* Set a max-width to prevent it from spreading too wide */
+}
+
+.footer .container div {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    text-align: left; /* Adjust text alignment for content */
+}
+
+.footer .shop-now h3,
+.footer .sitemap h3,
+.footer .join-pack h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center; /* Center the heading */
+}
+
+.footer .shop-now img {
+    display: block;
+    margin: 0 auto; /* Center the images within their container */
+    width: auto; /* Ensures image width adjusts proportionally */
+    height: 40px; /* Set the desired height */
+    padding: 5px; /* Add padding to separate images */
+}
+
+.footer .sitemap ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center align list items */
+}
+
+.footer .sitemap ul li {
+    margin: 10px 0;
+}
+
+.footer .sitemap ul li a {
+    color: #D21885;
+    text-decoration: none;
+    margin-left: 0;
+    text-align: center;
+}
+
+.footer .join-pack p {
+    font-size: 14px;
+    color: #D21885;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.footer .join-pack input {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 22px);
+    border: 1px solid #D21885;
+    color: #D21885;
+}
+
+.footer .join-pack button {
+    padding: 10px;
+    width: calc(110% - 32px);
+    background-color: #D21885;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer .bottom {
+    background-color: #D21885;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer .bottom a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons {
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin: 0 10px;
+    margin-left: 30px;
+    color: #D21885;
 }
 @media (min-width: 1024px) { /* For larger screens like laptop */
     .header img {
         max-height: 50px;
+        margin-left: 50%;
     }
     .search-bar {
-        width: 300px; 
+        width: 300px;
+        margin-right: 10%;
+    }
+    .nav a{
+        font-size: 24px;
+        margin-left: 200px;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
     }
     .search-bar input {
         width: 100%; 
-    }
-    .nav a {
-        font-size: 24px; 
     }
     .content img {
         width: 100%;
@@ -185,5 +290,27 @@ body {
     }
     .product-card {
          width: calc(25% - 20px);
+    }
+    .footer .container {
+        justify-content: center;
+    }
+
+    .footer .container div {
+        min-width: 250px;
+        text-align: left; /* Adjust text alignment for content */
+    }
+
+    .footer .shop-now h3,
+    .footer .sitemap h3,
+    .footer .join-pack h3 {
+        text-align: center; /* Center the heading */
+    }
+
+    .footer .shop-now img {
+        margin: 0 auto; /* Center the images within their container */
+        height: 50px; /* Increase height for larger screens if needed */
+    }
+    .footer .join-pack button {
+        width: calc(110% - 35px);
     }
 }

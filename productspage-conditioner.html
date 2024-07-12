@@ -81,7 +81,7 @@
             width: 20px;
         }
         .golden-line {
-            height: 4px;
+            height: 2px;
             background-color: #C49F24;
             margin: 0;
         }
@@ -167,16 +167,74 @@
             cursor: pointer;
             font-size: 16px;
         }
-        .pink-line{
-            height: 4px;
-            background-color: #D21885;
-            margin: 0;
-        }
         .footer {
+            background-color: #fff;
+            color: #d5199b;
+            padding: 20px 0;
             text-align: center;
-            padding: 20px;
-            background-color: #f1f1f1;
-            color: #333;
+            border-top: 5px solid #d5199b;
+        }
+        .footer .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer .container div {
+            flex: 1;
+            margin: 10px;
+            min-width: 200px;
+        }
+        .footer .shop-now h3,
+        .footer .sitemap h3,
+        .footer .join-pack h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .footer .shop-now img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100px;
+        }
+        .footer .sitemap ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer .sitemap ul li {
+            margin: 5px 0;
+        }
+        .footer .sitemap ul li a {
+            color: #d5199b;
+            text-decoration: none;
+        }
+        .footer .join-pack p {
+            font-size: 14px;
+            color: #d5199b;
+            margin: 10px 0;
+        }
+        .footer .join-pack input {
+            padding: 10px;
+            margin: 10px 0;
+            width: calc(100% - 22px);
+            border: 1px solid #d5199b;
+            color: #d5199b;
+        }
+        .footer .join-pack button {
+            padding: 10px 20px;
+            background-color: #d5199b;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .footer .bottom {
+            background-color: #d5199b;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .footer .bottom a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
         }
         @media (min-width: 1024px) { /* For larger screens like laptop */
             .header img {
@@ -302,7 +360,6 @@
     </div>
 
     <div class="golden-section"></div>
-    <div class="pink-line"></div>
 
     <footer class="footer">
         <div class="container">

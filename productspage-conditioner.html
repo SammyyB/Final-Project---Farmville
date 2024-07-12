@@ -115,7 +115,7 @@
         }
         .products {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: wrap; 
             justify-content: center;
             gap: 20px;
             padding: 20px;
@@ -126,7 +126,8 @@
             border-radius: 10px;
             text-align: center;
             padding: 20px;
-            width: 300px;
+            width: 300px; 
+            margin-bottom: 20px; 
         }
         .product-card img {
             width: 100%;
@@ -174,6 +175,13 @@
             }
             .content img {
                 width: 100%;
+            }
+            .products {
+                 justify-content: center; 
+                 gap: 20px;
+            }
+            .product-card {
+                 width: calc(25% - 20px);
             }
         }
     </style>

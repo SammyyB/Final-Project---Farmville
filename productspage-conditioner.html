@@ -10,204 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!--==CSS LINK-->
+    <link rel="stylesheet" href="assets\styles.css">
 
-    <!--==Internal CSS-->
-    <style>
-        body {
-            font-family: "Open Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: weight;
-            font-style: normal;
-            font-variation-settings: "wdth" 100;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .header img {
-            height: max-content;
-            max-height: 40px; 
-            margin-left: 50px; 
-        }
-
-        .header a {
-            padding: 20px;
-            margin-left: 10px;
-            margin-right: 10px;
-            font-size: 100px;
-        }
-
-        .nav {
-            display: flex;
-            gap: 20px;
-        }
-        .nav a {
-            text-decoration: none;
-            color: #D21885;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        .search-bar {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            border: 2px solid #CF388D;
-            padding: 5px;
-            border-radius: 25px;
-            margin-right: 20px; 
-        }
-        .search-bar input {
-            border: none;
-            outline: none;
-            padding: 5px;
-            border-radius: 25px;
-        }
-        .search-bar i {
-            color: #D21885;
-        }
-        .search-bar button {
-            border: none;
-            background: none;
-            cursor: pointer;
-        }
-        .search-bar img {
-            height: 20px;
-            width: 20px;
-        }
-        .golden-line {
-            height: 4px;
-            background-color: #C49F24;
-            margin: 0;
-        }
-        .banner {
-            text-align: center;
-            background-color: white;
-            color: #CF388D;
-            padding: 0; 
-            margin: 0; 
-        }
-        .content {
-            text-align: center;
-            padding: 0; 
-            background-color: #fdfdfd;
-            margin: 0; 
-        }
-        .content img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        .golden-section {
-            background: linear-gradient(to bottom, #CEAE37, #FFE3B3);
-            padding: 20px 0;
-            height: 0;
-        }
-        .products-section {
-            background-color: #D21885;
-            padding: 20px 0;
-        }
-        .products {
-            display: flex;
-            flex-wrap: wrap; 
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .product-card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            text-align: center;
-            padding: 20px;
-            width: 300px; 
-            margin-bottom: 20px; 
-            position: relative; /* Required for absolute positioning */
-        }
-        .product-card img {
-            width: 100%;
-            height: auto;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-        .product-card .product-hover-image {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: auto;
-            z-index: 1;
-        }
-        .product-card:hover .product-hover-image {
-            display: block;
-        }
-        .product-card h3 {
-            color: #D21885;
-            font-size: 18px;
-            margin: 0 0 10px;
-        }
-        .product-card .stars {
-            color: #FFD700;
-            margin-bottom: 20px;
-        }
-        .product-card button {
-            background-color: #D21885;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .pink-line{
-            height: 4px;
-            background-color: #D21885;
-            margin: 0;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f1f1f1;
-            color: #333;
-        }
-        @media (min-width: 1024px) { /* For larger screens like laptop */
-            .header img {
-                max-height: 50px;
-            }
-            .search-bar {
-                width: 300px; 
-            }
-            .search-bar input {
-                width: 100%; 
-            }
-            .nav a {
-                font-size: 24px; 
-            }
-            .content img {
-                width: 100%;
-            }
-            .products {
-                 justify-content: center; 
-                 gap: 20px;
-            }
-            .product-card {
-                 width: calc(25% - 20px);
-            }
-        }
-    </style>
 </head>
 <body>
 
     <div class="header">
-        <img src="https://www.missmanila.ph/wp-content/uploads/2024/02/miss-manila-creamsilk-pink.png" alt="Cream Silk Logo">
+        <img src="assets\Cream silk logo.webp" alt="Cream Silk Logo">
         <div class="nav">
             <a href="#">Products</a>
             <a href="#">About Us</a>
@@ -226,7 +36,7 @@
     </div>
 
     <div class="content">
-        <img src="https://assets-metrostyle.abs-cbn.com/prod/metro.style/media/assets-v2/12_december/31/tri-oleo-cs1-section-desktop-cover.jpg" alt="Conditioner Collection">
+        <img src="assets\Cream silk_ConditionerProducts_Banner.webp" alt="Conditioner Collection">
     </div>
 
     <div class="golden-section"></div>

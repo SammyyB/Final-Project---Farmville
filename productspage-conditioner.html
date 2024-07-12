@@ -81,7 +81,7 @@
             width: 20px;
         }
         .golden-line {
-            height: 2px;
+            height: 4px;
             background-color: #C49F24;
             margin: 0;
         }
@@ -128,6 +128,7 @@
             padding: 20px;
             width: 300px; 
             margin-bottom: 20px; 
+            position: relative; /* Required for absolute positioning */
         }
         .product-card img {
             width: 100%;
@@ -135,6 +136,18 @@
             border-bottom: 1px solid #ddd;
             padding-bottom: 20px;
             margin-bottom: 20px;
+        }
+        .product-card .product-hover-image {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+        }
+        .product-card:hover .product-hover-image {
+            display: block;
         }
         .product-card h3 {
             color: #D21885;
@@ -153,6 +166,11 @@
             padding: 10px 20px;
             cursor: pointer;
             font-size: 16px;
+        }
+        .pink-line{
+            height: 4px;
+            background-color: #D21885;
+            margin: 0;
         }
         .footer {
             text-align: center;
@@ -189,7 +207,7 @@
 <body>
 
     <div class="header">
-        <img src="https://shorturl.at/uB5BH" alt="Cream Silk Logo">
+        <img src="https://www.missmanila.ph/wp-content/uploads/2024/02/miss-manila-creamsilk-pink.png" alt="Cream Silk Logo">
         <div class="nav">
             <a href="#">Products</a>
             <a href="#">About Us</a>
@@ -208,7 +226,7 @@
     </div>
 
     <div class="content">
-        <img src="https://shorturl.at/MPloK" alt="Conditioner Collection">
+        <img src="https://assets-metrostyle.abs-cbn.com/prod/metro.style/media/assets-v2/12_december/31/tri-oleo-cs1-section-desktop-cover.jpg" alt="Conditioner Collection">
     </div>
 
     <div class="golden-section"></div>
@@ -216,7 +234,8 @@
     <div class="products-section">
         <div class="products">
             <div class="product-card">
-                <img src="https://shorturl.at/qOHc9" alt="Product 1">
+                <img src="https://cdn.sanity.io/images/xmpcmhrn/production/b8db390c13b4b8617d501e15d90dd5433892acbc-1500x1500.png?w=752&q=80&fit=max&auto=format" alt="Product 1">
+                <img class="product-hover-image" src="https://cdn.sanity.io/images/xmpcmhrn/production/b8db390c13b4b8617d501e15d90dd5433892acbc-1500x1500.png?w=752&q=80&fit=max&auto=format" alt="Product 1 Hover">
                 <h3>Cream Silk Ultimate Reborn Standout Straight Tri-Oleo Conditioner</h3>
                 <div class="stars">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -228,7 +247,8 @@
                 <button>BUY NOW</button>
             </div>
             <div class="product-card">
-                <img src="https://shorturl.at/mdDgQ" alt="Product 2">
+                <img src="https://zap.2sds.com/images/thumbs/0000582_cream-silk-ultimate-reborn-damage-control-conditioner-180ml_550.png" alt="Product 2">
+                <img class="product-hover-image" src="https://zap.2sds.com/images/thumbs/0000582_cream-silk-ultimate-reborn-damage-control-conditioner-180ml_550.png" alt="Product 2 Hover">
                 <h3>Cream Silk Ultimate Reborn Dry Damage Control Tri-Oleo Conditioner</h3>
                 <div class="stars">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -240,7 +260,8 @@
                 <button>BUY NOW</button>
             </div>
             <div class="product-card">
-                <img src="https://shorturl.at/0AURt" alt="Product 3">
+                <img src="https://filebroker-cdn.lazada.com.ph/kf/S41b5896a839346b3ae55b7f20ee60f5cW.jpg" alt="Product 3">
+                <img class="product-hover-image" src="https://filebroker-cdn.lazada.com.ph/kf/S41b5896a839346b3ae55b7f20ee60f5cW.jpg" alt="Product 3 Hover">
                 <h3>Cream Silk Ultimate Reborn Hairfall Defense Tri-Oleo Conditioner</h3>
                 <div class="stars">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -252,7 +273,8 @@
                 <button>BUY NOW</button>
             </div>
             <div class="product-card">
-                <img src="https://shorturl.at/WjhLH" alt="Product 4">
+                <img src="https://zap.2sds.com/images/thumbs/0000583_cream-silk-ultimate-reborn-dry-rescue-conditioner-180ml_550.png" alt="Product 4">
+                <img class="product-hover-image" src="https://zap.2sds.com/images/thumbs/0000583_cream-silk-ultimate-reborn-dry-rescue-conditioner-180ml_550.png" alt="Product 4 Hover">
                 <h3>Cream Silk Ultimate Reborn Dry Rescue Tri-Oleo Conditioner</h3>
                 <div class="stars">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -264,7 +286,8 @@
                 <button>BUY NOW</button>
             </div>
             <div class="product-card">
-                <img src="https://shorturl.at/ooSce" alt="Product 5">
+                <img src="https://cdn.sanity.io/images/xmpcmhrn/production/a2715a77d94afcb3d89186a9e5ab63f63c2a51a6-1024x1024.jpg?w=752&q=80&fit=max&auto=format" alt="Product 5">
+                <img class="product-hover-image" src="https://cdn.sanity.io/images/xmpcmhrn/production/a2715a77d94afcb3d89186a9e5ab63f63c2a51a6-1024x1024.jpg?w=752&q=80&fit=max&auto=format" alt="Product 5 Hover">
                 <h3>Cream Silk Ultimate Reborn Long & Luscious Tri-Oleo Conditioner</h3>
                 <div class="stars">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -279,10 +302,40 @@
     </div>
 
     <div class="golden-section"></div>
+    <div class="pink-line"></div>
 
-    <div class="footer">
-        <p>&copy; 2024 Cream Silk. All Rights Reserved.</p>
-    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="shop-now">
+                <h3>SHOP NOW AT</h3>
+                <img src="https://example.com/lazada.png" alt="Lazada">
+                <img src="https://example.com/shopee.png" alt="Shopee">
+                <img src="https://example.com/watsons.png" alt="Watsons">
+            </div>
+            <div class="sitemap">
+                <h3>SITEMAP</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="join-pack">
+                <h3>JOIN THE PACK!</h3>
+                <p>Share your email with us to receive the latest innovations, expert tips, VIP offers, and other relevant communications from Unilever. Unilever is committed to protecting your privacy and ensuring that your personal information is protected.</p>
+                <input type="email" placeholder="Email Address">
+                <button>SIGN UP</button>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>©2024 Unilever. All rights reserved.</p>
+            <a href="#">Privacy Notice</a> |
+            <a href="#">Legal</a> |
+            <a href="#">Cookie Notice</a> |
+            <a href="#">Sitemap</a> |
+            <a href="#">Accessibility</a>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -3,10 +3,11 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-variation-settings: "wdth" 100;
+    font-variation-settings: "width" 100;
     margin: 0;
     padding: 0;
 }
+
 .header {
     background-color: #ffffff;
     display: flex;
@@ -20,12 +21,7 @@ body {
     max-height: 40px;
     margin-left: 50px;
 }
-.header a {
-    padding: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 100px;
-}
+
 .nav {
     display: flex;
     gap: 30px;
@@ -33,7 +29,7 @@ body {
     justify-content: center;
 }
 .nav a {
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     color: #D21885;
     font-weight: bold;
@@ -61,10 +57,12 @@ body {
     background: none;
     cursor: pointer;
 }
+
 .search-bar img {
     height: 20px;
     width: 20px;
 }
+
 .golden-line {
     height: 4px;
     background-color: #C49F24;
@@ -92,7 +90,7 @@ body {
     margin-top: -10px; 
 }
 .golden-section {
-    background: linear-gradient(to bottom, #CEAE37, #FFE3B3);
+    background: linear-gradient(to right, #CEAE37, #FFE3B3);
     padding: 20px 0;
     height: 0;
 }
@@ -272,7 +270,6 @@ body {
 @media (min-width: 1024px) { 
     .header img {
         max-height: 50px;
-        margin-left: 50%;
     }
     .search-bar {
         width: 300px;

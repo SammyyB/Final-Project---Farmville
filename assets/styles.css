@@ -29,7 +29,7 @@ body {
 .nav {
     display: flex;
     gap: 30px;
-    align-items: center; /* Center align items vertically */
+    align-items: center; 
     justify-content: center;
 }
 .nav a {
@@ -115,7 +115,7 @@ body {
     padding: 20px;
     width: 300px; 
     margin-bottom: 20px; 
-    position: relative; /* Required for absolute positioning */
+    position: relative; 
 }
 .product-card img {
     width: 100%;
@@ -173,15 +173,15 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-    margin: 0 auto; /* Center the container with equal margins */
-    max-width: 1200px; /* Set a max-width to prevent it from spreading too wide */
+    margin: 0 auto; 
+    max-width: 1200px; 
 }
 
 .footer .container div {
     flex: 1;
     margin: 10px;
     min-width: 200px;
-    text-align: left; /* Adjust text alignment for content */
+    text-align: left; 
 }
 
 .footer .shop-now h3,
@@ -189,21 +189,21 @@ body {
 .footer .join-pack h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    text-align: center; /* Center the heading */
+    text-align: center; 
 }
 
 .footer .shop-now img {
     display: block;
-    margin: 0 auto; /* Center the images within their container */
-    width: auto; /* Ensures image width adjusts proportionally */
-    height: 40px; /* Set the desired height */
-    padding: 5px; /* Add padding to separate images */
+    margin: 0 auto; 
+    width: auto; 
+    height: 40px; 
+    padding: 5px; 
 }
 
 .footer .navigation ul {
     list-style: none;
     padding: 0;
-    text-align: center; /* Center align list items */
+    text-align: center; 
 }
 
 .footer .navigation ul li {
@@ -269,7 +269,7 @@ body {
     color: #D21885;
 }
 
-@media (min-width: 1024px) { /* For larger screens like laptop */
+@media (min-width: 1024px) { 
     .header img {
         max-height: 50px;
         margin-left: 50%;
@@ -304,18 +304,18 @@ body {
 
     .footer .container div {
         min-width: 250px;
-        text-align: left; /* Adjust text alignment for content */
+        text-align: left; 
     }
 
     .footer .shop-now h3,
     .footer .navigation h3,
     .footer .join-pack h3 {
-        text-align: center; /* Center the heading */
+        text-align: center; 
     }
 
     .footer .shop-now img {
-        margin: 0 auto; /* Center the images within their container */
-        height: 50px; /* Increase height for larger screens if needed */
+        margin: 0 auto; 
+        height: 50px; 
     }
     .footer .join-pack button {
         width: calc(110% - 35px);

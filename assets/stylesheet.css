@@ -65,6 +65,12 @@ body {
     margin: 0;
 }
 
+.golden-section {
+    background: linear-gradient(to bottom, #CEAE37, #FFE3B3);
+    padding: 20px 0;
+    height: 0;
+}
+
 .banner {
     position: relative;
     height: 70vh;
@@ -98,29 +104,152 @@ body {
 }
 
 .footer {
+    background-color: #fff;
+    color: #D21885;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    color: #333;
+    border-top: 4px solid #D21885;
 }
 
-@media (min-width: 1024px) {
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto; 
+    max-width: 1200px; 
+}
+
+.footer .container div {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    text-align: left; 
+}
+
+.footer .shop-now h3,
+.footer .sitemap h3,
+.footer .join-pack h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.footer .shop-now img {
+    display: block;
+    margin: 0 auto; 
+    width: auto; 
+    height: 40px; 
+    padding: 5px; 
+}
+
+.footer .sitemap ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; 
+}
+
+.footer .sitemap ul li {
+    margin: 10px 0;
+}
+
+.footer .sitemap ul li a {
+    color: #D21885;
+    text-decoration: none;
+    margin-left: 0;
+    text-align: center;
+}
+
+.footer .join-pack p {
+    font-size: 14px;
+    color: #D21885;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.footer .join-pack input {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 22px);
+    border: 1px solid #D21885;
+    color: #D21885;
+}
+
+.footer .join-pack button {
+    padding: 10px;
+    width: calc(110% - 32px);
+    background-color: #D21885;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer .bottom {
+    background-color: #D21885;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer .bottom a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons {
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin: 0 10px;
+    margin-left: 30px;
+    color: #D21885;
+}
+@media (min-width: 1024px) { 
     .header img {
         max-height: 50px;
+        margin-left: 50%;
     }
     .search-bar {
         width: 300px;
+        margin-right: 10%;
+    }
+    .nav a{
+        font-size: 24px;
+        margin-left: 200px;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
     }
     .search-bar input {
-        width: 100%;
+        width: 100%; 
     }
-    .nav a {
-        font-size: 24px;
+    .footer .container {
+        justify-content: center;
     }
-    .banner-text h1 {
-        font-size: 3em;
+
+    .footer .container div {
+        min-width: 250px;
+        text-align: left; 
     }
-    .banner-text p {
-        font-size: 1.5em;
+
+    .footer .shop-now h3,
+    .footer .sitemap h3,
+    .footer .join-pack h3 {
+        text-align: center; 
+    }
+
+    .footer .shop-now img {
+        margin: 0 auto; 
+        height: 50px; 
+    }
+    .footer .join-pack button {
+        width: calc(110% - 35px);
     }
 }

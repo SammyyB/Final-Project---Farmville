@@ -121,7 +121,7 @@ body {
 .banner {
     background-color: #D21885;
     color: white;
-    padding: 20px 0;
+    padding: 15px 0;
     display: flex;
     justify-content: center;
 }
@@ -167,7 +167,7 @@ body {
 
 .section {
     background-color: #D21885;
-    padding: 40px 20px;
+    padding: 5px 20px;
     text-align: center;
 }
 
@@ -192,7 +192,7 @@ body {
 
 .history {
     background-color: #D21885;
-    padding: 40px 20px;
+    padding: 5px 20px;
     text-align: center;
 }
 

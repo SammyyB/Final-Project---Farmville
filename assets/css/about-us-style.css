@@ -192,7 +192,7 @@ body {
 
 .history {
     background-color: #D21885;
-    padding: 5px 20px;
+    padding: 5px 5px;
     text-align: center;
 }
 
@@ -207,6 +207,33 @@ body {
     font-size: 18px;
     max-width: 800px;
     margin: 0 auto 20px;
+}
+
+.modern {
+    background-color: #D21885;
+    color: white;
+    padding: 20px;
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    text-align: left; 
+}
+
+.modern img {
+    max-width: 40%; 
+}
+
+.modern .text {
+    flex: 1; 
+}
+
+.modern h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.modern p {
+    font-size: 18px; 
 }
 
 .footer {
@@ -375,9 +402,31 @@ body {
 
     .footer .shop-now img {
         margin: 0 auto; 
-        height: 50px; 
     }
-    .footer .join-pack button {
-        width: calc(110% - 35px);
+
+    .footer .navigation ul {
+        text-align: center; 
+    }
+
+    .footer .navigation ul li a {
+        text-align: center;
+    }
+
+    .footer .join-pack p {
+        text-align: justify;
+    }
+
+    .modern {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .modern img {
+        max-width: 100%; 
+    }
+
+    .modern .text {
+        margin-top: 20px;
+        text-align: center;
     }
 }

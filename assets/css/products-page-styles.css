@@ -113,6 +113,8 @@ body {
 }
 .banner h1{
     margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 .content {

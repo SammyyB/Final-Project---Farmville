@@ -3,10 +3,11 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-variation-settings: "wdth" 100;
+    font-variation-settings: "width" 100;
     margin: 0;
     padding: 0;
 }
+
 .header {
     background-color: #ffffff;
     display: flex;
@@ -20,20 +21,15 @@ body {
     max-height: 40px;
     margin-left: 50px;
 }
-.header a {
-    padding: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 100px;
-}
+
 .nav {
     display: flex;
     gap: 30px;
-    align-items: center; /* Center align items vertically */
+    align-items: center; 
     justify-content: center;
 }
 .nav a {
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     color: #D21885;
     font-weight: bold;
@@ -61,10 +57,12 @@ body {
     background: none;
     cursor: pointer;
 }
+
 .search-bar img {
     height: 20px;
     width: 20px;
 }
+
 .golden-line {
     height: 4px;
     background-color: #C49F24;
@@ -95,7 +93,7 @@ body {
     margin-top: -10px; 
 }
 .golden-section {
-    background: linear-gradient(to bottom, #CEAE37, #FFE3B3);
+    background: linear-gradient(to right, #CEAE37, #FFE3B3);
     padding: 20px 0;
     height: 0;
 }
@@ -168,6 +166,12 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
+.pink-line{
+    height: 4px;
+    background-color: #D21885;
+    margin: 0;
+}
+
 .footer {
     background-color: #fff;
     color: #D21885;
@@ -181,8 +185,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-    margin: 0 auto; /* Center the container with equal margins */
-    max-width: 1200px; /* Set a max-width to prevent it from spreading too wide */
+    margin: 0 auto; 
+    max-width: 1200px; 
 }
 
 .footer .container div {
@@ -190,36 +194,36 @@ body {
     margin: 20px;
     padding-bottom: 20px;
     min-width: 200px;
-    text-align: left; /* Adjust text alignment for content */
+    text-align: left; 
 }
 
 .footer .shop-now h3,
-.footer .sitemap h3,
+.footer .navigation h3,
 .footer .join-pack h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    text-align: center; /* Center the heading */
+    text-align: center; 
 }
 
 .footer .shop-now img {
     display: block;
-    margin: 0 auto; /* Center the images within their container */
-    width: auto; /* Ensures image width adjusts proportionally */
-    height: 40px; /* Set the desired height */
-    padding: 5px; /* Add padding to separate images */
+    margin: 0 auto; 
+    width: auto; 
+    height: 40px; 
+    padding: 5px; 
 }
 
-.footer .sitemap ul {
+.footer .navigation ul {
     list-style: none;
     padding: 0;
-    text-align: center; /* Center align list items */
+    text-align: center; 
 }
 
-.footer .sitemap ul li {
+.footer .navigation ul li {
     margin: 10px 0;
 }
 
-.footer .sitemap ul li a {
+.footer .navigation ul li a {
     color: #D21885;
     text-decoration: none;
     margin-left: 0;
@@ -278,6 +282,8 @@ body {
     margin-left: 30px;
     color: #D21885;
 }
+
+@media (min-width: 1024px) { 
 .golden-line-footer {
     height: 4px;
     background-color: #C49F24;
@@ -288,7 +294,6 @@ body {
 @media (min-width: 1024px) { /* For larger screens like laptop */
     .header img {
         max-height: 50px;
-        margin-left: 50%;
     }
     .search-bar {
         width: 300px;
@@ -329,18 +334,18 @@ body {
 
     .footer .container div {
         min-width: 250px;
-        text-align: left; /* Adjust text alignment for content */
+        text-align: left; 
     }
 
     .footer .shop-now h3,
-    .footer .sitemap h3,
+    .footer .navigation h3,
     .footer .join-pack h3 {
-        text-align: center; /* Center the heading */
+        text-align: center; 
     }
 
     .footer .shop-now img {
-        margin: 0 auto; /* Center the images within their container */
-        height: 50px; /* Increase height for larger screens if needed */
+        margin: 0 auto; 
+        height: 50px; 
     }
     .footer .join-pack button {
         width: calc(110% - 35px);

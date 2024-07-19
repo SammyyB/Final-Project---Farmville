@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cream Silk</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    <link rel="stylesheet" href="assets/stylesheet.css">
     <link rel="stylesheet" href="assets/stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="header">
-        <img src="https://shorturl.at/uB5BH" alt="Cream Silk Logo">
+        <a href="index.html"><img src="https://shorturl.at/uB5BH" alt="Cream Silk Logo"></a>
         <div class="nav">
-            <a href="productspage-conditioner.html">Products</a>
+            <div class="dropdown">
+                <a href="#">Products</a>
+                <div class="dropdown-content">
+                    <a href="productspage-conditioner.html">Conditioner</a>
+                    <a href="productspage-ultraconditioner.html">Ultra Conditioners</a>
+                    <a href="productspage-lightconditioner.html">Light Conditioners</a>
+                    <a href="productspage-hairtreatment.html">Hair Treatment</a>
+                </div>
+            </div>
             <a href="about-us-page.html">About Us</a>
         </div>
         <div class="search-bar">
@@ -29,16 +35,102 @@
 
     <div class="golden-line"></div>
 
-    <div class="banner">
-        <img src="assets/creamsilk-banner.jpg" alt="Banner Image">
-        <div class="banner-text">
-            <h1>BE CONDITIONED FOR GREATER</h1>
-            <p>OUR SOLUTION FOR THE MODERN FILIPINA HERE:</p>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/creamsilk-banner1.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/creamsilk-banner2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/creamsilk-banner3.png" alt="Third slide">
+            </div>
+        </div>
+    </div> 
+    
+    <div class="golden-section"></div>
+
+    <div class="collections">
+        <h2>COLLECTIONS</h2>
+        <div class="collection-items">
+            <div class="card">
+                <img src="assets/ultimate-reborn.png" alt="New Ultimate Reborn Range">
+                <div class="card-content"></div>
+                <p>New Ultimate Reborn Range</p>
+            </div>
+            <div class="card">
+                <img src="assets/keratin-rescue.png" alt="Triple Keratin Rescue">
+                <div class="card-content"></div>
+                <p>Triple Keratin Rescue</p>
+            </div>
+            <div class="card">
+                <img src="assets/powerfusion-collection.jpg" alt="Rich Organics">
+                <div class="card-content"></div>
+                <p>Rich Organics</p>
+            </div>
+            <div class="card">
+                <img src="assets/powerfusion-collection.jpg" alt="Keratin Treatment">
+                <div class="card-content"></div>
+                <p>Keratin Treatment</p>
+            </div>
         </div>
     </div>
 
-    <div class="footer">
-        <p>&copy; 2024 Cream Silk. All Rights Reserved.</p>
-    </div>
+    <div class="treatment">
+        <div class="golden-section"></div>        
+            <h2>THE SALON EXPERT TREATMENT</h2>
+                <iframe width="1260" height="650" src="https://www.youtube.com/embed/JEzVeqx6jhs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>    
+
+    <div class="golden-section"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="shop-now">
+                <h3>SHOP NOW AT</h3>
+                <a href="https://www.lazada.com.ph/shop-hair-care/cream-silk/"><img src="assets/Lazada logo.png" alt="Lazada"></a>
+                <a href="https://shopee.ph/unilever_personalcare?is_from_login=true"><img src="assets/Shopee logo.png" alt="Shopee"></a>
+                <a href="https://www.watsons.com.ph/all-brands/b/154216/creamsilk"><img src="assets/watsons logo.png" alt="Watsons"></a>
+            </div>
+            <div class="navigation">
+                <h3>WEBPAGE</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="about-us-page.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="join-pack">
+                <h3>JOIN THE PACK!</h3>
+                <p>Share your email with us to receive the latest innovations, expert tips, VIP offers, and other relevant communications from Unilever. Unilever is committed to protecting your privacy and ensuring that your personal information is protected.</p>
+                <input type="email" placeholder="Email Address">
+                <button>SIGN UP</button>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>©2024 Unilever. All rights reserved.</p>
+            <a href="#">Privacy Notice</a> |
+            <a href="#">Legal</a> |
+            <a href="#">Cookie Notice</a> |
+            <a href="#">Navigation</a> |
+            <a href="#">Accessibility</a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var carouselElement = document.getElementById('carouselExampleIndicators');
+            var carousel = new bootstrap.Carousel(carouselElement, {
+                interval: 3600, 
+                wrap: true 
+            });
+            carousel.cycle();
+        });
+    </script>
 </body>
 </html>

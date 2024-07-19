@@ -96,6 +96,10 @@ body {
     cursor: pointer;
 }
 
+.logo img {
+
+}
+
 .golden-line {
     height: 4px;
     background-color: #C49F24;

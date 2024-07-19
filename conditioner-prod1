@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cream Silk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/products-page-styles.css">
+
+</head>
+<body>
+
+    <div class="header">
+        <a href="index.html"><img src="https://shorturl.at/uB5BH"" alt="Cream Silk Logo"></a>
+        <div class="nav">
+            <div class="dropdown">
+                <a href="#">Products</a>
+                <div class="dropdown-content">
+                    <a href="productspage-conditioner.html">Conditioner</a>
+                    <a href="productspage-ultraconditioner.html">Ultra Conditioners</a>
+                    <a href="productspage-lightconditioner.html">Light Conditioners</a>
+                    <a href="productspage-hairtreatment.html">Hair Treatment</a>
+                </div>
+            </div>
+            <a href="about-us-page.html">About Us</a>
+        </div>
+        <div class="search-bar">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>

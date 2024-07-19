@@ -4,211 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cream Silk</title>
-    <!--==FontAwesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <!--==Open Sans Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/products-page-styles.css">
 
-    <!--==Internal CSS-->
-    <style>
-        body {
-            font-family: "Open Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: weight;
-            font-style: normal;
-            font-variation-settings: "wdth" 100;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .header img {
-            height: max-content;
-            max-height: 40px; 
-            margin-left: 50px; 
-        }
-
-        .header a {
-            padding: 20px;
-            margin-left: 10px;
-            margin-right: 10px;
-            font-size: 100px;
-        }
-
-        .nav {
-            display: flex;
-            gap: 20px;
-        }
-        .nav a {
-            text-decoration: none;
-            color: #D21885;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        .search-bar {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            border: 2px solid #CF388D;
-            padding: 5px;
-            border-radius: 25px;
-            margin-right: 20px; 
-        }
-        .search-bar input {
-            border: none;
-            outline: none;
-            padding: 5px;
-            border-radius: 25px;
-        }
-        .search-bar i {
-            color: #D21885;
-        }
-        .search-bar button {
-            border: none;
-            background: none;
-            cursor: pointer;
-        }
-        .search-bar img {
-            height: 20px;
-            width: 20px;
-        }
-        .golden-line {
-            height: 2px;
-            background-color: #C49F24;
-            margin: 0;
-        }
-        .banner {
-            text-align: center;
-            background-color: white;
-            color: #CF388D;
-            padding: 0; 
-            margin: 0; 
-        }
-        .content {
-            text-align: center;
-            padding: 0; 
-            background-color: #fdfdfd;
-            margin: 0; 
-        }
-        .content img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        .golden-section {
-            background: linear-gradient(to bottom, #CEAE37, #FFE3B3);
-            padding: 20px 0;
-            height: 0;
-        }
-        .products-section {
-            background-color: #D21885;
-            padding: 20px 0;
-        }
-        .products {
-            display: flex;
-            flex-wrap: wrap; 
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .product-card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            text-align: center;
-            padding: 20px;
-            width: 300px; 
-            margin-bottom: 20px; 
-        }
-        .product-card img {
-            width: 100%;
-            height: auto;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-        .product-card h3 {
-            color: #D21885;
-            font-size: 18px;
-            margin: 0 0 10px;
-        }
-        .product-card .stars {
-            color: #FFD700;
-            margin-bottom: 20px;
-        }
-        .product-card button {
-            background-color: #D21885;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f1f1f1;
-            color: #333;
-        }
-        @media (min-width: 1024px) { /* For larger screens like laptop */
-            .header img {
-                max-height: 50px;
-            }
-            .search-bar {
-                width: 300px; 
-            }
-            .search-bar input {
-                width: 100%; 
-            }
-            .nav a {
-                font-size: 24px; 
-            }
-            .content img {
-                width: 100%;
-            }
-            .products {
-                 justify-content: center; 
-                 gap: 20px;
-            }
-            .product-card {
-                 width: calc(25% - 20px);
-            }
-        }
-    </style>
 </head>
 <body>
 
     <div class="header">
-        <img src="https://www.missmanila.ph/wp-content/uploads/2024/02/miss-manila-creamsilk-pink.png" alt="Cream Silk Logo">
+        <a href="index.html"><img src="https://shorturl.at/uB5BH"" alt="Cream Silk Logo"></a>
         <div class="nav">
-            <a href="#">Products</a>
-            <a href="#">About Us</a>
+            <div class="dropdown">
+                <a href="#">Products</a>
+                <div class="dropdown-content">
+                    <a href="productspage-conditioner.html">Conditioner</a>
+                    <a href="productspage-ultraconditioner.html">Ultra Conditioners</a>
+                    <a href="productspage-lightconditioner.html">Light Conditioners</a>
+                    <a href="productspage-hairtreatment.html">Hair Treatment</a>
+                </div>
+            </div>
+            <a href="about-us-page.html">About Us</a>
         </div>
         <div class="search-bar">
             <i class="fa fa-search" aria-hidden="true"></i>
             <input type="text" placeholder="Search...">
-            <i class="fa fa-microphone" aria-hidden="true"></i>
         </div>
     </div>
+    
 
     <div class="golden-line"></div> 
 
     <div class="banner">
-        <h1>ULTRA CONDITIONER COLLECTION</h1>
+        <h1>OUR CONDITIONER COLLECTION</h1>
     </div>
 
     <div class="content">
-        <img src="https://assets-metrostyle.abs-cbn.com/prod/metro.style/media/assets-v2/12_december/31/tri-oleo-cs1-section-desktop-cover.jpg" alt="Conditioner Collection">
+        <img src="assets/Cream silk_UltraConditionerProducts_Banner.avif" alt="Ultra Conditioner Collection">
     </div>
 
     <div class="golden-section"></div>
@@ -216,8 +49,9 @@
     <div class="products-section">
         <div class="products">
             <div class="product-card">
-                <img src="https://assets.unileversolutions.com/v1/45250057.png?im=AspectCrop=(400,400);Resize=(400,400)" alt="Product 1">
-                <h3>Cream Silk Triple Keratin Rescue Hair Fall Defiance Ultra Conditioner</h3>
+                <img class="product-image-default" src="assets/cream silk ultimate reborn standout straight product.webp" alt="Product 1">
+                <img class="product-image-hover" src="assets/Heart evangelista hover pic_products conditioner.jpg" alt="Product 1 Hover">
+                <h3>Cream Silk Ultimate Reborn Standout Straight Tri-Oleo Conditioner</h3>
                 <div class="stars">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -227,9 +61,11 @@
                 </div>
                 <button>BUY NOW</button>
             </div>
+    
             <div class="product-card">
-                <img src="https://assets.unileversolutions.com/v1/1724083.png?im=AspectCrop=(400,400);Resize=(400,400)" alt="Product 2">
-                <h3>Cream Silk Keratin Treatment</h3>
+                <img class="product-image-default" src="assets/cream silk ultimate reborn dry damage control product.png" alt="Product 2">
+                <img class="product-image-hover" src="assets/Catriona Gray hover pic_products.jpg" alt="Product 2 Hover">
+                <h3>Cream Silk Ultimate Reborn Dry Damage Control Tri-Oleo Conditioner</h3>
                 <div class="stars">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -239,9 +75,11 @@
                 </div>
                 <button>BUY NOW</button>
             </div>
+    
             <div class="product-card">
-                <img src="https://store.iloilosupermart.com/wp-content/uploads/2020/05/942.jpg" alt="Product 3">
-                <h3>Ultimate Repair & Shine Triple Keratin Rescue Conditioner</h3>
+                <img class="product-image-default" src="assets/cream silk ultimate reborn hairfall defense product.jpg" alt="Product 3">
+                <img class="product-image-hover" src="assets/Nadine Lustre hover pic_products.jpg" alt="Product 3 Hover">
+                <h3>Cream Silk Ultimate Reborn Hairfall Defense Tri-Oleo Conditioner</h3>
                 <div class="stars">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -251,9 +89,25 @@
                 </div>
                 <button>BUY NOW</button>
             </div>
+    
             <div class="product-card">
-                <img src="https://assets.unileversolutions.com/v1/1513947.png?im=AspectCrop=(400,400);Resize=(400,400)" alt="Product 4">
-                <h3>Cream Silk Ultimate Straight Conditioner</h3>
+                <img class="product-image-default" src="assets/cream silk ultimate reborn dry rescue product.png" alt="Product 4">
+                <img class="product-image-hover" src="assets/Pia Wurtzbach hover pic_products.jpg" alt="Product 4 Hover">
+                <h3>Cream Silk Ultimate Reborn Dry Rescue Tri-Oleo Conditioner</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <button>BUY NOW</button>
+            </div>
+    
+            <div class="product-card">
+                <img class="product-image-default" src="assets/cream silk ultimate reborn long and luscious product.webp" alt="Product 5">
+                <img class="product-image-hover" src="assets/Yassi Pressman hover pic_products.jpg" alt="Product 5 Hover">
+                <h3>Cream Silk Ultimate Reborn Long & Luscious Tri-Oleo Conditioner</h3>
                 <div class="stars">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -265,10 +119,51 @@
             </div>
         </div>
     </div>
+    
+    <div class="golden-section"></div>
 
-    <div class="footer">
-        <p>&copy; 2024 Cream Silk. All Rights Reserved.</p>
+    <footer class="footer">
+    <div class="container">
+        <div class="shop-now">
+            <h3>SHOP NOW AT</h3>
+            <img src="assets\Lazada logo.png" alt="Lazada">
+            <img src="assets\Shopee logo.png" alt="Shopee">
+            <img src="assets\watsons logo.png" alt="Watsons">
+        </div>
+        <div class="sitemap">
+            <h3>NAVIGATION</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="join-pack">
+                <h3>JOIN THE PACK!</h3>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <hr class="golden-line">
+                <p>Share your email with us to receive the latest innovations, expert tips, VIP offers, and other relevant communications from Unilever. Unilever is committed to protecting your privacy and ensuring that your personal information is protected.</p>
+                <input type="email" placeholder="Email Address">
+                <button>SIGN UP</button>
+            </div>
     </div>
+
+    <div class="golden-line-footer"></div> 
+    <div class="bottom">
+        <p>©2024 Unilever. All rights reserved.</p>
+        <a href="#">Privacy Notice</a> |
+        <a href="#">Legal</a> |
+        <a href="#">Cookie Notice</a> |
+        <a href="#">Navigation</a> |
+        <a href="#">Accessibility</a>
+    </div>
+</footer>
+
 
 </body>
 </html>

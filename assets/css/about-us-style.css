@@ -96,7 +96,7 @@ body {
     cursor: pointer;
 }
 
-.logo img {
+.logo-unilever img {
     width: 600px;
     height: 450px;
 }
@@ -105,6 +105,11 @@ body {
     height: 4px;
     background-color: #C49F24;
     margin: 0;
+}
+
+.logo-unilever img {
+    width: 600;
+    height: 450;
 }
 
 .golden-section {

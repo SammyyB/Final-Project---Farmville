@@ -150,55 +150,81 @@ body {
     padding: 0 20px 0 100px;
 }
 
-.content {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.section {
+.nothing-content-section {
     background-color: #D21885;
-    padding: 5px 20px;
+    color: white;
+    padding: 20px 20px; 
     text-align: center;
 }
 
-.section h2 {
-    color: white;
-    font-size: 36px;
-    margin-bottom: 20px;
+.nothing-text-container {
+    margin-bottom: 10px;
+    padding-top: 0; 
 }
 
-.section p {
-    color: white;
+.nothing-text-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0; 
+    margin-bottom: 5px; 
+}
+
+.nothing-text-container p {
     font-size: 25px;
     max-width: 800px;
-    margin: 0 auto 20px;
+    margin: 0 auto 5px; 
 }
 
-.section img {
+.nothing-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0; 
+}
+
+.nothing-image-container img {
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
+    display: block;
 }
 
-.history {
+
+.history-content-section {
     background-color: #D21885;
-    padding: 5px 5px;
+    color: white;
+    padding: 20px 20px; 
     text-align: center;
 }
 
-.history h2 {
-    color: white;
-    font-size: 36px;
-    margin-bottom: 2px;
+.history-text-container {
+    margin-bottom: 10px;
+    padding-top: 0; 
 }
 
-.history p {
-    color: white;
+.history-text-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0; 
+    margin-bottom: 5px; 
+}
+
+.history-text-container p {
     font-size: 25px;
     max-width: 800px;
-    margin: 0 auto 20px;
+    margin: 0 auto 5px; 
 }
+
+.history-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0; 
+}
+
+.history-image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 .filipina-content-section {
     background-color: #D21885;

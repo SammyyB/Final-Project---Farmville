@@ -108,12 +108,6 @@ body {
     height: 0;
 }
 
-.banner {
-    background-color: #D21885;
-    color: white;
-    padding: 15px 0;
-}
-
 .banner-content-section {
     display: flex;
     align-items: center;
@@ -124,39 +118,40 @@ body {
 
 .banner-text-container {
     flex: 1;
-    padding-right: 60px; 
-    padding-left: 40px; 
-    text-align: left;   
-    margin-left: 180px;
+    padding-right: 20px; 
+    padding-left: 20px; 
+    text-align: left; 
+    margin-left: 0; 
+    max-width: 50%; 
 }
 
 .banner-image-container {
-    flex: 2;
+    flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center; 
+    max-width: 50%; 
 }
 
 .banner-image-container img {
-    max-width: 80%; 
-    height: auto;
+    max-width: 100%; 
+    height: auto; 
     display: block;
-    margin-left: auto; 
 }
 
 .banner-text-container h1 {
-    font-size: 60px;
+    font-size: 60px; 
     margin-bottom: 10px;
-    margin-left: 0; 
 }
 
 .banner-text-container p {
     font-size: 36px; 
-    max-width: 700px; 
+    max-width: 100%; 
     margin-top: 0;
     margin-bottom: 20px;
-    margin-left: 0; 
 }
+
+
 
 .nothing-content-section {
     background-color: #D21885;

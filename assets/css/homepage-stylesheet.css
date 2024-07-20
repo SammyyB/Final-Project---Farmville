@@ -143,6 +143,7 @@ body {
 }
 
 .collection-items .card {
+    color: #D21885;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -373,6 +374,7 @@ body {
         max-width: 1200px; 
     }
     .collection-items .card {
+        color: #D21885;
         width: 300px; 
         max-width: 100%; 
         height: auto; 

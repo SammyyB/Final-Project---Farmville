@@ -108,6 +108,10 @@ body {
     font-size: 24px;
 }
 
+.banner h1 {
+    font-weight: bold;
+}
+
 .container {
     width: 80%;
     margin: 50 auto;
@@ -155,6 +159,18 @@ body {
     cursor: pointer;
 }
 
+#about{
+    text-align: center;
+}
+
+#ingredients {
+    text-align: center;
+}
+
+#how-to-use{
+    text-align: center;
+}
+
 .card1 button:hover {
     background-color: #f9f9f9;
 }
@@ -162,6 +178,7 @@ body {
 .tabs {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 20px 0;
 }
 
@@ -196,6 +213,25 @@ body {
     border-radius: 10px;
 }
 
+.back-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .back-icon:hover {
+    color: #d21885;
+  }
+
+  .back-icon i {
+    margin-right: 10px;
+  }
+
+ 
 @media (min-width: 1024px) { /* For larger screens like laptop */
     .header img {
         max-height: 50px;

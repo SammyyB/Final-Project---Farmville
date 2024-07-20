@@ -167,7 +167,7 @@ body {
     margin: 0;
     font-size: 1.1em;
     font-weight: bold;
-    color: #D21885;
+    color: #D21885 !important;
     padding: 15px;
     text-align: center;
 }
@@ -363,24 +363,16 @@ body {
     .collection-items {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; 
-        align-items: center; 
-        gap: 20px; 
-        margin: 0 auto; 
-        width: 100%; 
-        max-width: 1200px; 
+        justify-content: center;
+        gap: 20px;
     }
     .collection-items .card {
-        color:#D21885;
-        width: 300px; 
-        max-width: 100%; 
-        height: auto; 
-        margin: 0; 
-        padding: 10px; 
-        box-sizing: border-box; 
+        width: 150px;
     }
-    .card-content h3 {
-        color:#D21885;
+    .collection-items .card .card-content h3 {
+        font-size: 0.8em;
+        padding: 10px;
+        color: #D21885 !important;
     }
     .treatment h2 {
         font-size: 2em;

@@ -354,21 +354,6 @@ body {
         font-size: 35px;
         margin: 0; 
     }
-    
-    /*.search-bar {
-        width: 30%;
-        margin: 10px 0;
-    }
-    .nav a{
-        font-size: 24px;
-        margin-left: 200px;
-        gap: 30px;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .search-bar input {
-        width: 100%; 
-    }*/
     .content img {
         width: 100%;
     }
@@ -550,7 +535,7 @@ body {
     .footer .join-pack input,
     .footer .join-pack button {
         width: 100%;
-        margin-left: 12px;
+        margin-left: 10px;
     }
     .social-icons i {
         font-size: 20px;

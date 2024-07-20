@@ -1,3 +1,4 @@
+
 body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -218,8 +219,6 @@ body {
 }
 
 
-
-
 .filipina-content-section {
     background-color: #D21885;
     color: white;
@@ -230,7 +229,7 @@ body {
     justify-content: center;
 }
 
-.filipina-text-container,
+
 .filipina-image-container {
     flex: 1 1 100%; 
     max-width: 100%; 
@@ -240,7 +239,7 @@ body {
 }
 
 .filipina-text-container {
-    margin-bottom: 20px;
+    margin-bottom: 100PX; 
     padding: 0 10px; 
 }
 
@@ -254,20 +253,24 @@ body {
     font-size: 25px;
     max-width: 800px;
     margin: 0 auto;
-    margin-bottom: 20px; 
+    margin-bottom: -50px; 
 }
 
 .filipina-image-container {
     display: flex;
     justify-content: center;
-    margin-top: 0; /* Adjust margin to align properly */
+    margin-top: -70px; 
+    margin-bottom: 70px;
+    position: relative; 
 }
 
 .filipina-image-container img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    display: block;
+    object-fit: cover; 
 }
+
+
 
 
 

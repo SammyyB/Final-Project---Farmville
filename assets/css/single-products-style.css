@@ -108,9 +108,14 @@ body {
     font-size: 24px;
 }
 
+.banner h1 {
+    font-weight: bold;
+}
+
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: 50 auto;
+    margin-bottom: 40px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -154,6 +159,18 @@ body {
     cursor: pointer;
 }
 
+#about{
+    text-align: center;
+}
+
+#ingredients {
+    text-align: center;
+}
+
+#how-to-use{
+    text-align: center;
+}
+
 .card1 button:hover {
     background-color: #f9f9f9;
 }
@@ -161,6 +178,7 @@ body {
 .tabs {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 20px 0;
 }
 
@@ -195,70 +213,241 @@ body {
     border-radius: 10px;
 }
 
-@media (min-width: 1024px) { /* For larger screens like laptop */
+.back-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .back-icon:hover {
+    color: #d21885;
+  }
+
+  .back-icon i {
+    margin-right: 10px;
+  }
+
+  /* footer styles start here */
+
+  .pink-line{
+    height: 4px;
+    background-color: #D21885;
+    margin: 0;
+}
+
+.footer {
+    background-color: #fff;
+    color: #D21885;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 4px solid #D21885;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.footer .container div {
+    flex: 1;
+    margin: 20px;
+    padding-bottom: 20px;
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer .shop-now h3,
+.footer .sitemap h3,
+.footer .join-pack h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer .shop-now img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 40px;
+    padding: 5px;
+}
+
+.footer .sitemap ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer .sitemap ul li {
+    margin: 10px 0;
+}
+
+.footer .sitemap ul li a {
+    color: #D21885;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer .sitemap ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .join-pack p {
+    font-size: 14px;
+    color: #D21885;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.footer .join-pack input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid #D21885;
+    color: #D21885;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.footer .join-pack button {
+    padding: 10px;
+    width: 100%;
+    max-width: 350px;
+    background-color: #D21885;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.footer .bottom {
+    background-color: #D21885;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.footer .bottom a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons {
+    margin: 5px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #D21885;
+}
+
+.golden-line-footer {
+    height: 4px;
+    background-color: #C49F24;
+    margin: 0;
+    padding: 0;
+}
+
+.golden-line {
+    height: 4px;
+    background-color: #C49F24;
+    margin: 0;
+    opacity: 100%;
+}
+.golden-section {
+    background: linear-gradient(to right, #CEAE37, #FFE3B3);
+    padding: 20px 0;
+    height: 0;
+}
+ 
+/* Mobile styles */
+@media (max-width: 600px){
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
     .header img {
-        max-height: 50px;
+        margin: 0;
+        max-height: 35px;
     }
-    .search-bar {
-        width: 300px;
-        margin-right: 10%;
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px 0;
+        gap: 20px;
     }
-    .nav a{
+    .nav a {
         font-size: 24px;
-        margin-left: 200px;
+        margin-left: 20px;
         gap: 30px;
         align-items: center;
         justify-content: space-between;
     }
+    .search-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
     .search-bar input {
-        width: 100%; 
+        width: calc(100% - 30px); 
+    }
+    .content {
+        padding: 10px;
     }
     .content img {
-        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: 0px;
+    }
+    .golden-section{
+        margin-top: 0;
+        padding: 20px 0px;
+        height: 0;
     }
     .products {
-         justify-content: center; 
-         gap: 20px;
+        flex-direction: column;
+        gap: 10px;
     }
     .product-card {
-         width: calc(30% - 60px);
-    }
-    .product-card .product-image-hover {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
-        height: calc(100% - 190px); /* Adjust to leave space for product name */
-        opacity: 0;
-        z-index: 1;
+        padding: 10px;
+    }
+    .product-card img {
+        width: 100%;
+        height: auto;
     }
     .footer .container {
-        justify-content: center;
+        flex-direction: column;
+        text-align: center;
     }
-
     .footer .container div {
-        min-width: 250px;
-        text-align: left; 
+        margin: 10px 0;
     }
-
-    .footer .shop-now h3,
-    .footer .navigation h3,
-    .footer .join-pack h3 {
-        text-align: center; 
-    }
-
-    .footer .shop-now img {
-        margin: 0 auto; 
-        height: 50px; 
-    }
+    .footer .join-pack input,
     .footer .join-pack button {
-        width: calc(110% - 35px);
+        width: 100%;
+        margin-left: 12px;
     }
-
-    .golden-line-footer {
-        height: 4px;
-        background-color: #C49F24;
-        margin: 0;
-        padding: 0;
+    .social-icons i {
+        font-size: 20px;
+        margin: 0 5px;
     }
 }

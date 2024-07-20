@@ -25,27 +25,7 @@
                 wrap: true 
             });
         });
-    </script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const searchInput = document.getElementById('searchInput');
-        const cards = document.querySelectorAll('.card');
-
-        searchInput.addEventListener('input', function (event) {
-            const query = event.target.value.toLowerCase();
-
-            cards.forEach(card => {
-                const name = card.getAttribute('data-name').toLowerCase();
-                if (name.includes(query)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-    });
-    </script>
-    
+    </script>    
 
     <div class="header">
         <a href="index.html"><img src="https://shorturl.at/uB5BH" alt="Cream Silk Logo"></a>

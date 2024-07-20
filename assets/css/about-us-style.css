@@ -13,12 +13,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    margin-top: 19px;
+    padding: 20px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header img {
-    height: max-content;
+    height: auto;
     max-height: 40px;
     margin-left: 50px;
 }
@@ -100,8 +101,8 @@ body {
     height: 4px;
     background-color: #C49F24;
     margin: 0;
+    opacity: 100%;
 }
-
 .golden-section {
     background: linear-gradient(to right, #CEAE37, #FFE3B3);
     padding: 20px 0;
@@ -278,48 +279,52 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-    margin: 0 auto; 
-    max-width: 1200px; 
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .footer .container div {
     flex: 1;
-    margin: 10px;
+    margin: 20px;
+    padding-bottom: 20px;
     min-width: 200px;
-    text-align: left; 
+    text-align: left;
 }
 
 .footer .shop-now h3,
-.footer .navigation h3,
+.footer .sitemap h3,
 .footer .join-pack h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    text-align: center; 
+    text-align: center;
 }
 
 .footer .shop-now img {
     display: block;
-    margin: 0 auto; 
-    width: auto; 
-    height: 40px; 
-    padding: 5px; 
+    margin: 0 auto;
+    width: auto;
+    height: 40px;
+    padding: 5px;
 }
 
-.footer .navigation ul {
+.footer .sitemap ul {
     list-style: none;
     padding: 0;
-    text-align: center; 
+    text-align: center;
 }
 
-.footer .navigation ul li {
+.footer .sitemap ul li {
     margin: 10px 0;
 }
 
-.footer .navigation ul li a {
-    color: #D21885 ;
+.footer .sitemap ul li a {
+    color: #D21885;
     text-decoration: none;
-    margin-left: 0;
     text-align: center;
+}
+
+.footer .sitemap ul li a:hover {
+    text-decoration: underline;
 }
 
 .footer .join-pack p {
@@ -332,18 +337,24 @@ body {
 .footer .join-pack input {
     padding: 10px;
     margin: 10px 0;
-    width: calc(100% - 22px);
+    width: 100%;
+    max-width: 350px;
     border: 1px solid #D21885;
     color: #D21885;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 .footer .join-pack button {
     padding: 10px;
-    width: calc(110% - 32px);
+    width: 100%;
+    max-width: 350px;
     background-color: #D21885;
     color: #fff;
     border: none;
     cursor: pointer;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 .footer .bottom {
@@ -352,6 +363,7 @@ body {
     padding: 10px 0;
     margin-top: 20px;
     text-align: center;
+    margin: 0;
 }
 
 .footer .bottom a {
@@ -361,7 +373,7 @@ body {
 }
 
 .social-icons {
-    margin: 10px 0;
+    margin: 5px 0;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -370,10 +382,15 @@ body {
 .social-icons i {
     font-size: 30px;
     margin: 0 10px;
-    margin-left: 30px;
     color: #D21885;
 }
 
+.golden-line-footer {
+    height: 4px;
+    background-color: #C49F24;
+    margin: 0;
+    padding: 0;
+}
 @media (min-width: 1024px) {
     .header img {
         margin-top: 1px;

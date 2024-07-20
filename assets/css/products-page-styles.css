@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 20px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -337,27 +337,40 @@ body {
     padding: 0;
 }
 
-@media (min-width: 1024px) { /* For larger screens like laptop */
+@media (min-width: 1024px) {
     .header img {
-        margin-left: 120px;
-        max-height: 40px;
+        margin-top: 1px;
+        margin-left: 10px;
+        max-height: 60px;
     }
     .search-bar {
-        width: 15%;
+        width: 18%;
     }
     .nav {
-        gap: 15px; 
-        margin: 10px 0;
+        display: flex;
+        gap: 25px;
     }
     .nav a {
         font-size: 35px;
-        margin-right: 5px; 
+        gap: 30px;
+        margin: 0 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    .dropdown {
+        position: relative; /* Add this line */
+        margin-right: 100px;
+    }
+    .dropdown-content {
+        position: absolute; /* Add this line */
+        left: 0; /* Adjust this value as needed to align with the "Products" text */
+        margin-left: 0;
     }
     .content img {
         width: 100%;
     }
     .products {
-        justify-content: center; 
+        justify-content: center;
         gap: 20px;
     }
     .product-card {
@@ -378,18 +391,18 @@ body {
 
     .footer .container div {
         min-width: 250px;
-        text-align: left; 
+        text-align: left;
     }
 
     .footer .shop-now h3,
     .footer .navigation h3,
     .footer .join-pack h3 {
-        text-align: center; 
+        text-align: center;
     }
 
     .footer .shop-now img {
-        margin: 0 auto; 
-        height: 50px; 
+        margin: 0 auto;
+        height: 50px;
     }
     .footer .join-pack button {
         width: calc(110% - 35px);
@@ -402,7 +415,6 @@ body {
         padding: 0;
     }
 }
-
 /* For iPad */
 @media (min-width: 768px) and (max-width: 1366px) {
     .header {

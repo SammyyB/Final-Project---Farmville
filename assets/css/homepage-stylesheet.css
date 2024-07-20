@@ -334,7 +334,7 @@ body {
         padding: 10px;
     }
     .header img {
-        margin: 0;
+        margin-left: 10px;
         max-height: 55px;
     }
     .nav {
@@ -500,6 +500,7 @@ body {
     .carousel-item img {
         width: 100%;
         height: auto;
+        object-fit :cover;
     }
     .collections h1 {
         font-size: 2em;
@@ -565,23 +566,19 @@ body {
 @media (min-width: 1024px) {
     .header img {
         margin-left: 10px;
-        max-height: 60px;
+        max-height: 65px;
     }
     .search-bar {
         width: 350px;
     }
     .nav {
         flex-direction: row;
-        gap: 200px; 
+        gap: 150px; 
         margin: 10px 0;
     }
     .nav a {
-        font-size: 35px;
-        margin: 0; 
-    }
-    .carousel-item img {
-        width: 100%;
-        height: auto;
+        font-size: 40px;
+        margin-right: 5px; 
     }
     .collections h1 {
         font-size: 3.5em;
@@ -645,22 +642,6 @@ body {
     .carousel-item img {
         width: 100%;
         height: auto;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 901px) and (max-width: 1200px) {
-    .carousel-item img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 1201px) {
-    .carousel-item img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        object-fit :cover;
     }
 }

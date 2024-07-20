@@ -240,6 +240,7 @@ body {
     max-width: 350%; 
     height: auto;
     display: block;
+    flex-wrap: wrap;
 }
 
 .filipina-text-container {

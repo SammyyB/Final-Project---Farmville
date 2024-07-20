@@ -104,6 +104,7 @@ body {
     margin: 0;
     opacity: 100%;
 }
+
 .golden-section {
     background: linear-gradient(to right, #CEAE37, #FFE3B3);
     padding: 20px 0;
@@ -401,31 +402,28 @@ body {
 }
 @media (min-width: 1024px) {
     .header img {
-        margin-top: 1px;
         margin-left: 10px;
-        max-height: 66px;
+        max-height: 43px;
     }
     .search-bar {
         width: 18%;
     }
     .nav {
-        display: flex;
+        flex-direction: row;
         gap: 25px;
     }
     .nav a {
-        font-size: 35px;
+        font-size: 26px;
         gap: 30px;
         margin: 0 15px;
-        align-items: center;
-        justify-content: center;
     }
     .dropdown {
-        position: relative; 
+        position: relative; /* Add this line */
         margin-right: 100px;
     }
     .dropdown-content {
-        position: absolute; 
-        left: 0; 
+        position: absolute; /* Add this line */
+        left: 0; /* Adjust this value as needed to align with the "Products" text */
         margin-left: 0;
     }
     .content img {
@@ -443,7 +441,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        height: calc(100% - 190px); 
+        height: calc(100% - 190px); /* Adjust to leave space for product name */
         opacity: 0;
         z-index: 1;
     }

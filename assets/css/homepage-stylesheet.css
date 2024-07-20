@@ -143,6 +143,7 @@ body {
 }
 
 .collection-items .card {
+    color: #D21885;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -162,16 +163,13 @@ body {
     height: auto;
 }
 
-.collection-items .card .card-content {
-    padding: 15px;
-    text-align: center;
-}
-
 .collection-items .card .card-content h3 {
     margin: 0;
     font-size: 1.1em;
-    color: #D21885;
     font-weight: bold;
+    color: #D21885;
+    padding: 15px;
+    text-align: center;
 }
 
 .treatment {
@@ -373,12 +371,16 @@ body {
         max-width: 1200px; 
     }
     .collection-items .card {
+        color:#D21885;
         width: 300px; 
         max-width: 100%; 
         height: auto; 
         margin: 0; 
         padding: 10px; 
         box-sizing: border-box; 
+    }
+    .card-content h3 {
+        color:#D21885;
     }
     .treatment h2 {
         font-size: 2em;
@@ -516,6 +518,7 @@ body {
         max-width: 1200px; 
     }
     .collection-items .card {
+        color: #D21885;
         width: 300px; 
         max-width: 100%; 
         height: auto; 

@@ -2,7 +2,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: normal;
     font-style: normal;
     font-variation-settings: "width" 100;
     margin: 0;
@@ -228,8 +228,8 @@ body {
     flex-wrap: wrap; 
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box; 
 }
-
 
 .filipina-image-container {
     flex: 1 1 100%; 
@@ -237,41 +237,39 @@ body {
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    box-sizing: border-box; 
 }
 
-.filipina-text-container{
-    margin-top: -160px;
-    margin-bottom: 100px; 
-    padding: 0 10px; 
+.filipina-text-container {
+    margin: 0 auto; 
+    padding: 0 10x; 
+    width: 100%;
+    max-width: 800px; 
+    box-sizing: border-box; 
+    margin-top: 0; 
+    margin-bottom: 20px; 
 }
 
 .filipina-text-container h2 {
-    font-size: 36px;
+    font-size: 36px; 
     font-weight: bold;
     margin: 0; 
 }
 
 .filipina-text-container p {
-    font-size: 25px;
-    max-width: 800px;
+    font-size: 25px; 
+    max-width: 100%; 
     margin: 0 auto;
-    margin-bottom: -100px; 
-}
-
-.filipina-image-container {
-    width: 100%; 
-    height: auto; 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    margin-top: -100px;
+    margin-bottom: 20px; 
 }
 
 .filipina-image-container img {
     width: 100%;
     height: auto;
     object-fit: cover; 
+    max-width: 100%; 
 }
+
 
 
 .footer {

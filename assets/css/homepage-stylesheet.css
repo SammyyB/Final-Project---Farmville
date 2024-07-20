@@ -32,7 +32,7 @@ body {
 }
 
 .nav a {
-    font-size: 35px;
+    font-size: 16px;
     text-decoration: none;
     color: #D21885;
     font-weight: bold;
@@ -561,19 +561,28 @@ body {
 @media (min-width: 1024px) {
     .header img {
         margin-left: 10px;
-        max-height: 65px;
+        max-height: 43px;
     }
     .search-bar {
-        width: 350px;
+        width: 337px;
     }
     .nav {
         flex-direction: row;
-        gap: 150px; 
+        gap: 58px; 
         margin: 10px 0;
     }
     .nav a {
-        font-size: 40px;
+        font-size: 27px;
         margin-right: 5px; 
+    }
+    .dropdown {
+        position: relative; 
+        margin-right: 100px;
+    }
+    .dropdown-content {
+        position: absolute; 
+        left: 0; 
+        margin-right: 0;
     }
     .collections h1 {
         font-size: 3.5em;

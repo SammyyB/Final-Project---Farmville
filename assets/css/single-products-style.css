@@ -148,8 +148,8 @@ body {
 
 .card1 p {
     margin: 10px 0;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 150px;
+    padding-right: 150px;
     font-size: 16px;
 }
 
@@ -385,23 +385,20 @@ body {
 /* Media Queries for responsiveness */
 @media (min-width: 1024px) {
     .header img {
-        margin-top: 1px;
         margin-left: 10px;
-        max-height: 66px;
+        max-height: 43px;
     }
     .search-bar {
         width: 18%;
     }
     .nav {
-        display: flex;
+        flex-direction: row;
         gap: 25px;
     }
     .nav a {
-        font-size: 35px;
+        font-size: 26px;
         gap: 30px;
         margin: 0 15px;
-        align-items: center;
-        justify-content: center;
     }
     .dropdown {
         position: relative; /* Add this line */

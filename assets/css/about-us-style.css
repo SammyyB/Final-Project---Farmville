@@ -128,11 +128,11 @@ body {
 }
 
 .banner-image-container {
-    flex: 1;
+    flex: 3;
 }
 
 .banner-image-container img {
-    width: 100%;
+    width: 75%;
     height: auto;
     display: block;
     margin: auto;
@@ -141,13 +141,13 @@ body {
 .banner-text-container h1 {
     font-size: 48px;
     margin-bottom: 10px;
-    padding: 0 20px 0 100px
+    padding: 0 20px 0 100px;
 }
 
 .banner-text-container p {
     font-size: 25px;
     max-width: 600px;
-    padding: 0 20px 0 100px
+    padding: 0 20px 0 100px;
 }
 
 .content {
@@ -200,40 +200,47 @@ body {
     margin: 0 auto 20px;
 }
 
-.content-section {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #e6007e; 
+.filipina-content-section {
+    background-color: #D21885;
     color: white;
+    padding: 20px 20px; 
+    text-align: center;
 }
 
-.image-container {
-    flex: 1;
+.filipina-text-container {
+    margin-bottom: 10px;
+    padding-top: 0; 
 }
 
-.image-container img {
-    width: 100%;
+.filipina-text-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0; 
+    margin-bottom: 5px; 
+}
+
+.filipina-text-container p {
+    font-size: 25px;
+    max-width: 800px;
+    margin: 0 auto 5px; 
+}
+
+.filipina-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0; 
+}
+
+.filipina-image-container img {
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: auto;
 }
 
-.text-container {
-    flex: 1;
-    padding-left: 20px;
-}
 
-.text-container h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
 
-.text-container p {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
+
+
 
 .footer {
     background-color: #fff;

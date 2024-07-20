@@ -371,13 +371,16 @@ body {
         max-width: 1200px; 
     }
     .collection-items .card {
-        color:#D21885 ;
+        color:#D21885;
         width: 300px; 
         max-width: 100%; 
         height: auto; 
         margin: 0; 
         padding: 10px; 
         box-sizing: border-box; 
+    }
+    .card-content h3 {
+        color:#D21885;
     }
     .treatment h2 {
         font-size: 2em;

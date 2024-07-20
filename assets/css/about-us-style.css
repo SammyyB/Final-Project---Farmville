@@ -112,53 +112,42 @@ body {
     background-color: #D21885;
     color: white;
     padding: 15px 0;
+}
+
+.banner-content-section {
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: left;
+    padding: 20px;
+    background-color: #D21885; 
+    color: white;
 }
 
-.banner-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.banner .text {
+.banner-text-container {
     flex: 1;
-    text-align: left;
-    margin-right: 20px;
+    padding-right: 20px; 
 }
 
-.banner .text h1 {
-    margin: 0;
-    font-size: 48px;
-}
-
-.banner .text p {
-    max-width: 600px;
-    font-size: 24px;
-    margin: 20px 0 0;
-}
-
-.banner .logo {
+.banner-image-container {
     flex: 1;
-    display: flex;
-    justify-content: flex-end;
 }
 
-.logo-unilever img {
-    display: flex;
-    width: 75%;
+.banner-image-container img {
+    width: 100%;
     height: auto;
-    margin-left: auto;
+    display: block;
+    margin: auto;
 }
 
-.banner .logo img {
-    max-width: 200px;
+.banner-text-container h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
+
+.banner-text-container p {
+    font-size: 24px;
+    max-width: 600px;
+}
+
 
 .content {
     background-color: #f9f9f9;

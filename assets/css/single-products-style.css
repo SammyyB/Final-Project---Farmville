@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f071ac;
+    background-color: #D21885;
     margin: 0;
     padding: 0;
 }
@@ -103,7 +103,7 @@ body {
 .banner {
     text-align: center;
     padding: 20px 0;
-    background-color: #f071ac;
+    background-color: #D21885;
     color: #fff;
     font-size: 24px;
 }

@@ -104,7 +104,6 @@ body {
     margin: 0;
     opacity: 100%;
 }
-
 .golden-section {
     background: linear-gradient(to right, #CEAE37, #FFE3B3);
     padding: 20px 0;
@@ -244,12 +243,12 @@ body {
 
 .filipina-text-container {
     margin: 0 auto; 
-    padding: 0 10x; 
+    padding: 0 10px; 
     width: 100%;
     max-width: 800px; 
     box-sizing: border-box; 
     margin-top: 0; 
-    margin-bottom: 0px; 
+    margin-bottom: 0; 
 }
 
 .filipina-text-container h2 {
@@ -261,7 +260,7 @@ body {
 .filipina-text-container p {
     font-size: 25px; 
     max-width: 100%; 
-    margin: 0 auto;
+    margin: 0 auto 10px;
     margin-bottom: 20px; 
 }
 
@@ -401,30 +400,35 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 @media (min-width: 1024px) {
     .header img {
+        margin-top: 1px;
         margin-left: 10px;
-        max-height: 43px;
+        max-height: 66px;
     }
     .search-bar {
         width: 18%;
     }
     .nav {
-        flex-direction: row;
+        display: flex;
         gap: 25px;
     }
     .nav a {
-        font-size: 26px;
+        font-size: 35px;
         gap: 30px;
         margin: 0 15px;
+        align-items: center;
+        justify-content: center;
     }
     .dropdown {
-        position: relative; /* Add this line */
+        position: relative; 
         margin-right: 100px;
     }
     .dropdown-content {
-        position: absolute; /* Add this line */
-        left: 0; /* Adjust this value as needed to align with the "Products" text */
+        position: absolute; 
+        left: 0; 
         margin-left: 0;
     }
     .content img {
@@ -442,7 +446,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        height: calc(100% - 190px); /* Adjust to leave space for product name */
+        height: calc(100% - 190px); 
         opacity: 0;
         z-index: 1;
     }

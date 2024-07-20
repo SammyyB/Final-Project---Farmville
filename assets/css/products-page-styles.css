@@ -239,6 +239,7 @@ body {
 .footer .shop-now h3,
 .footer .sitemap h3,
 .footer .join-pack h3 {
+    font-weight: bolder;
     font-size: 18px;
     margin-bottom: 10px;
     text-align: center;
@@ -355,12 +356,12 @@ body {
         margin: 0 15px;
     }
     .dropdown {
-        position: relative; /* Add this line */
+        position: relative; 
         margin-right: 100px;
     }
     .dropdown-content {
-        position: absolute; /* Add this line */
-        left: 0; /* Adjust this value as needed to align with the "Products" text */
+        position: absolute; 
+        left: 0; 
         margin-left: 0;
     }
     .content img {
@@ -378,7 +379,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        height: calc(100% - 190px); /* Adjust to leave space for product name */
+        height: calc(100% - 190px); 
         opacity: 0;
         z-index: 1;
     }
@@ -548,10 +549,22 @@ body {
     .footer .join-pack input,
     .footer .join-pack button {
         width: 100%;
-        margin-left: 10px;
+        max-width: 100%;
+        margin: 10px 0; 
+        box-sizing: border-box; 
     }
     .social-icons i {
         font-size: 20px;
         margin: 0 5px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    .footer .join-pack input,
+    .footer .join-pack button {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0; 
+        box-sizing: border-box; 
     }
 }

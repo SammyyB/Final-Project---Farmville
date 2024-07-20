@@ -10,11 +10,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0px;
-    padding-top:  40px ;
-    padding-bottom:  20px;
-    padding-right: 20px;
-    padding-left: 20px;
+    margin-top: 19px;
+    padding: 20px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -382,26 +379,23 @@ body {
     height: 0;
 }
 
-/* Media Queries for responsiveness */
+/*media queries for responsiveness*/
 @media (min-width: 1024px) {
     .header img {
-        margin-top: 1px;
         margin-left: 10px;
-        max-height: 66px;
+        max-height: 43px;
     }
     .search-bar {
         width: 18%;
     }
     .nav {
-        display: flex;
+        flex-direction: row;
         gap: 25px;
     }
     .nav a {
-        font-size: 35px;
+        font-size: 26px;
         gap: 30px;
         margin: 0 15px;
-        align-items: center;
-        justify-content: center;
     }
     .dropdown {
         position: relative; /* Add this line */

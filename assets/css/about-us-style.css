@@ -209,21 +209,25 @@ body {
     background-color: #D21885;
     color: white;
     padding: 20px;
-    display: flex; 
-    align-items: left; 
-    gap: 200px; 
-    text-align: left; 
+    display: flex;
+}
+
+.modern image {
+    flex: 1;
+    margin-right: 300px;
 }
 
 .modern img {
-    max-width: 100%;
+    max-width: 150%;
     height: auto;
+    
 }
 
-.modern .text {
+.modern text {
     flex: 1; 
-    text-align: left;
+    text-align: right;
     margin-left: 50px;
+    padding: 0;
 }
 
 .modern h2 {

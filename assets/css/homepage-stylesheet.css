@@ -19,7 +19,7 @@ body {
 }
 
 .header img {
-    height: max-content;
+    height: auto;
     max-height: 40px;
     margin-left: 50px;
 }

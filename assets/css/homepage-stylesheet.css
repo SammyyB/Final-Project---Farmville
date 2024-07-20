@@ -3,7 +3,7 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-variation-settings: "width" 100;
+    font-variation-settings: "width" 100; 
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 .header img {
-    height: max-content;
+    height: auto;
     max-height: 40px;
     margin-left: 50px;
 }
@@ -129,6 +129,7 @@ body {
 }
 
 .collections h1 {
+    margin: 20px 0 20px 0;
     font-weight: bold;
     font-size: 2.5em;
     color: white;
@@ -185,6 +186,7 @@ body {
 }
 
 .treatment h2 {
+    margin: 20px 0 20px 0;
     font-weight: bold;
     font-size: 2.5em;
     color: white;
@@ -210,37 +212,39 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-    margin: 0 auto; 
-    max-width: 1200px; 
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .footer .container div {
     flex: 1;
-    margin: 10px;
+    margin: 20px;
+    padding-bottom: 20px;
     min-width: 200px;
-    text-align: left; 
+    text-align: left;
 }
 
 .footer .shop-now h3,
 .footer .navigation h3,
 .footer .join-pack h3 {
+    font-weight: bolder;
     font-size: 18px;
     margin-bottom: 10px;
-    text-align: center; 
+    text-align: center;
 }
 
 .footer .shop-now img {
     display: block;
-    margin: 0 auto; 
-    width: auto; 
-    height: 40px; 
-    padding: 5px; 
+    margin: 0 auto;
+    width: auto;
+    height: 40px;
+    padding: 5px;
 }
 
 .footer .navigation ul {
     list-style: none;
     padding: 0;
-    text-align: center; 
+    text-align: center;
 }
 
 .footer .navigation ul li {
@@ -248,10 +252,13 @@ body {
 }
 
 .footer .navigation ul li a {
-    color: #D21885 ;
+    color: #D21885;
     text-decoration: none;
-    margin-left: 0;
     text-align: center;
+}
+
+.footer .navigation ul li a:hover {
+    text-decoration: underline;
 }
 
 .footer .join-pack p {
@@ -264,18 +271,22 @@ body {
 .footer .join-pack input {
     padding: 10px;
     margin: 10px 0;
-    width: calc(100% - 22px);
+    width: 100%;
+    max-width: 350px;
     border: 1px solid #D21885;
     color: #D21885;
+    box-sizing: border-box;
 }
 
 .footer .join-pack button {
     padding: 10px;
-    width: calc(110% - 32px);
+    width: 100%;
+    max-width: 350px;
     background-color: #D21885;
     color: #fff;
     border: none;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .footer .bottom {
@@ -284,6 +295,7 @@ body {
     padding: 10px 0;
     margin-top: 20px;
     text-align: center;
+    margin: 0;
 }
 
 .footer .bottom a {
@@ -293,7 +305,7 @@ body {
 }
 
 .social-icons {
-    margin: 10px 0;
+    margin: 5px 0;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -302,48 +314,192 @@ body {
 .social-icons i {
     font-size: 30px;
     margin: 0 10px;
-    margin-left: 30px;
     color: #D21885;
 }
 
-@media (min-width: 1024px) { 
-    .header img {
-        max-height: 50px;
+.golden-line-footer {
+    height: 4px;
+    background-color: #C49F24 !important;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
     }
-    .search-bar {
-        width: 300px;
-        margin-right: 10%;
-    }
-    .nav a{
-        font-size: 24px;
-        margin-left: 200px;
-        gap: 30px;
+    .header {
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        padding: 10px;
     }
-    .search-bar input {
-        width: 100%; 
+    .header img {
+        margin: 0;
+        max-height: 30px;
     }
-    .footer .container {
-        justify-content: center;
-    }
-
-    .footer .container div {
-        min-width: 250px;
-        text-align: left; 
-    }
-
-    .footer .shop-now h3,
-    .footer .navigation h3,
-    .footer .join-pack h3 {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+        width: 100%;
         text-align: center; 
     }
-
-    .footer .shop-now img {
-        margin: 0 auto; 
-        height: 50px; 
+    .nav a {
+        font-size: 14px; 
     }
+    .search-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .golden-section {
+        padding: 10px 0;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+    .collections h1 {
+        font-size: 1.5em;
+    }
+    .collection-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .collection-items .card {
+        width: 100%;
+    }
+    .treatment h2 {
+        font-size: 2em;
+    }
+    .treatment iframe {
+        width: 100%;
+        height: auto;
+    }
+    .footer {
+        padding: 10px 0;
+        text-align: center;
+        border-top: 4px solid #D21885;
+    }
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 10px; 
+    }
+    .footer .container div {
+        flex: 1;
+        margin: 20px 0;
+        padding-bottom: 20px;
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+    .footer .shop-now img,
+    .footer .sitemap ul li a,
+    .footer .join-pack p,
+    .footer .join-pack input,
     .footer .join-pack button {
-        width: calc(110% - 35px);
+        margin: 0 auto;
+    }
+    .footer .shop-now img {
+        height: 30px;
+    }
+    .footer .sitemap ul li {
+        margin: 5px 0;
+    }
+    .footer .join-pack input,
+    .footer .join-pack button {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0; 
+        box-sizing: border-box; 
+    }
+    .footer .social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+    }
+    .footer .social-icons i {
+        font-size: 24px;
+    }
+    .footer .bottom {
+        padding: 10px 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        padding: 15px;
+    }
+    .header {
+        flex-direction: row;
+        align-items: center;
+        padding: 15px;
+    }
+    .header img {
+        margin: 0;
+        max-height: 35px;
+    }
+    .nav {
+        flex-direction: row;
+        gap: 20px;
+        margin: 10px 0;
+    }
+    .search-bar {
+        width: 50%;
+        margin: 10px 0;
+    }
+    .golden-section {
+        padding: 15px 0;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: 400px;
+    }
+    .collections h1 {
+        font-size: 2em;
+    }
+    .collection-items {
+        flex-direction: row;
+        gap: 40px;
+    }
+    .collection-items .card {
+        width: 45%;
+    }
+    .treatment h2 {
+        font-size: 2.5em;
+    }
+    .treatment iframe {
+        width: 100%;
+        height: 400px;
+    }
+    .footer .container {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        margin: 0 auto;
+    }
+    .footer .container div {
+        flex: 1;
+        margin: 20px;
+        padding-bottom: 20px;
+        min-width: 45%;
+    }
+    .footer .join-pack input,
+    .footer .join-pack button {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0; 
+        box-sizing: border-box; 
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1320px) {
+    .treatment iframe {
+        width: 100%;
+        height: auto;
     }
 }

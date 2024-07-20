@@ -357,16 +357,29 @@ body {
     .carousel-item img {
         width: 100%;
         height: auto;
+        object-fit: fill;
     }
     .collections h1 {
         font-size: 1.5em;
     }
     .collection-items {
-        flex-direction: column;
-        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        align-items: center; 
+        gap: 20px; 
+        margin: 0 auto; 
+        width: 100%; 
+        max-width: 1200px; 
     }
+
     .collection-items .card {
-        width: 100%;
+        width: 300px; 
+        max-width: 100%; 
+        height: auto; 
+        margin: 0; 
+        padding: 10px; 
+        box-sizing: border-box; 
     }
     .treatment h2 {
         font-size: 2em;
@@ -457,7 +470,8 @@ body {
     }
     .carousel-item img {
         width: 100%;
-        height: 400px;
+        height: auto;
+        object-fit: fill;
     }
     .collections h1 {
         font-size: 2em;
@@ -476,11 +490,17 @@ body {
         width: 100%;
         height: 400px;
     }
+    .footer {
+        padding: 20px 0;
+        text-align: center;
+    }
     .footer .container {
         flex-direction: row;
         align-items: flex-start;
         text-align: left;
         margin: 0 auto;
+        max-width: 100%; 
+        box-sizing: border-box;
     }
     .footer .container div {
         flex: 1;
@@ -494,6 +514,19 @@ body {
         max-width: 100%;
         margin: 10px 0; 
         box-sizing: border-box; 
+    }
+    .footer .bottom {
+        background-color: #D21885;
+        color: #fff;
+        padding: 10px 0;
+        margin: 0;
+        max-width: 100%;
+        box-sizing: border-box; 
+    }
+    .footer .bottom a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
     }
 }
 

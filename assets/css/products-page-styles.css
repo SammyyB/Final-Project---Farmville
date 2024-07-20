@@ -549,10 +549,22 @@ body {
     .footer .join-pack input,
     .footer .join-pack button {
         width: 100%;
-        margin-left: 10px;
+        max-width: 100%;
+        margin: 10px 0; 
+        box-sizing: border-box; 
     }
     .social-icons i {
         font-size: 20px;
         margin: 0 5px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    .footer .join-pack input,
+    .footer .join-pack button {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0; 
+        box-sizing: border-box; 
     }
 }

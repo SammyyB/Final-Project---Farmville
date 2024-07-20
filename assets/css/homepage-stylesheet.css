@@ -148,13 +148,13 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adjusted transition time and added box-shadow transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
     width: 200px;
 }
 
 .collection-items .card:hover {
-    transform: scale(1.1); /* Increased scale for more noticeable pop-up effect */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for more depth */
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
 }
 
 .collection-items .card img {

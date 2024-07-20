@@ -222,55 +222,46 @@ body {
 .filipina-content-section {
     background-color: #D21885;
     color: white;
-    padding: 20px; 
-    text-align: center;
+    padding: 20px;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    flex-direction: column;
-    box-sizing: border-box; 
+    align-items: center;
+    justify-content: flex-start; 
 }
 
 .filipina-image-container {
-    flex: 1 1 100%; 
-    max-width: 100%; 
+    flex: 1;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    box-sizing: border-box; 
-    margin-bottom: 0px; 
-}
-
-.filipina-text-container {
-    margin: 0 auto; 
-    padding: 0 10px; 
-    width: 100%;
-    max-width: 800px; 
-    box-sizing: border-box; 
-    margin-top: 0; 
-    margin-bottom: 0; 
-}
-
-.filipina-text-container h2 {
-    font-size: 36px; 
-    font-weight: bold;
-    margin: 0; 
-}
-
-.filipina-text-container p {
-    font-size: 25px; 
-    max-width: 100%; 
-    margin: 0 auto 10px;
-    margin-bottom: 20px; 
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    flex-shrink: 0; 
 }
 
 .filipina-image-container img {
-    width: 100%;
+    max-width: 250%; 
     height: auto;
-    object-fit: cover; 
-    max-width: 100%; 
-    margin-bottom: 0px;
+    display: block;
 }
+
+.filipina-text-container {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px; 
+}
+
+.filipina-text-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filipina-text-container p {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
 
 
 

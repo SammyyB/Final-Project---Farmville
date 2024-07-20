@@ -127,6 +127,7 @@ body {
     padding-right: 60px; 
     padding-left: 40px; 
     text-align: left;   
+    margin-left: 180px;
 }
 
 .banner-image-container {
@@ -160,32 +161,31 @@ body {
 .nothing-content-section {
     background-color: #D21885;
     color: white;
-    padding: 20px 20px; 
+    padding: 20px; 
     text-align: center;
 }
 
 .nothing-text-container {
-    margin-bottom: 10px;
-    padding-top: 0; 
+    margin-bottom: 0;
+    padding-bottom: 20px; 
 }
 
 .nothing-text-container h2 {
     font-size: 36px;
     font-weight: bold;
-    margin-top: 0; 
-    margin-bottom: 5px; 
+    margin: 0; 
 }
 
 .nothing-text-container p {
     font-size: 25px;
     max-width: 800px;
-    margin: 0 auto 5px; 
+    margin: 0 auto; 
 }
 
 .nothing-image-container {
     display: flex;
     justify-content: center;
-    margin-top: 0; 
+    margin-top: 40px; 
 }
 
 .nothing-image-container img {
@@ -193,6 +193,7 @@ body {
     height: auto;
     display: block;
 }
+
 
 
 .history-content-section {
@@ -232,36 +233,34 @@ body {
     display: block;
 }
 
-
 .filipina-content-section {
     background-color: #D21885;
     color: white;
-    padding: 20px 20px; 
+    padding: 20px; 
     text-align: center;
 }
 
 .filipina-text-container {
-    margin-bottom: 10px;
-    padding-top: 0; 
+    margin-bottom: 20px; 
 }
 
 .filipina-text-container h2 {
     font-size: 36px;
     font-weight: bold;
-    margin-top: 0; 
-    margin-bottom: 5px; 
+    margin: 0; 
 }
 
 .filipina-text-container p {
     font-size: 25px;
     max-width: 800px;
-    margin: 0 auto 5px; 
+    margin: 0 auto;
+    margin-bottom: 20px; 
 }
 
 .filipina-image-container {
     display: flex;
     justify-content: center;
-    margin-top: 0; 
+    margin-top: -65px; 
 }
 
 .filipina-image-container img {
@@ -269,10 +268,6 @@ body {
     height: auto;
     display: block;
 }
-
-
-
-
 
 
 .footer {

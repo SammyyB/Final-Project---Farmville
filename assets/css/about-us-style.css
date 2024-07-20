@@ -96,20 +96,10 @@ body {
     cursor: pointer;
 }
 
-.logo-unilever img {
-    width: 600px;
-    height: 450px;
-}
-
 .golden-line {
     height: 4px;
     background-color: #C49F24;
     margin: 0;
-}
-
-.logo-unilever img {
-    width: 600;
-    height: 450;
 }
 
 .golden-section {
@@ -154,6 +144,12 @@ body {
     display: flex;
     justify-content: flex-end;
 }
+
+.logo-unilever img {
+    width: 750px;
+    height: auto;
+}
+
 
 .banner .logo img {
     max-width: 200px;
@@ -204,7 +200,7 @@ body {
 
 .history p {
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     max-width: 800px;
     margin: 0 auto 20px;
 }
@@ -214,17 +210,20 @@ body {
     color: white;
     padding: 20px;
     display: flex; 
-    align-items: center; 
-    gap: 20px; 
+    align-items: left; 
+    gap: 200px; 
     text-align: left; 
 }
 
 .modern img {
-    max-width: 40%; 
+    max-width: 100%;
+    height: auto;
 }
 
 .modern .text {
     flex: 1; 
+    text-align: left;
+    margin-left: 50px;
 }
 
 .modern h2 {
@@ -430,3 +429,4 @@ body {
         text-align: center;
     }
 }
+

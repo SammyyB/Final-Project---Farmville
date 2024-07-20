@@ -500,6 +500,7 @@ body {
     .carousel-item img {
         width: 100%;
         height: auto;
+        object-fit :cover;
     }
     .collections h1 {
         font-size: 2em;
@@ -579,10 +580,6 @@ body {
         font-size: 40px;
         margin-right: 5px; 
     }
-    .carousel-item img {
-        width: 100%;
-        height: auto;
-    }
     .collections h1 {
         font-size: 3.5em;
     }
@@ -645,22 +642,6 @@ body {
     .carousel-item img {
         width: 100%;
         height: auto;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 901px) and (max-width: 1200px) {
-    .carousel-item img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 1201px) {
-    .carousel-item img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        object-fit :cover;
     }
 }

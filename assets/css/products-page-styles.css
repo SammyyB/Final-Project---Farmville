@@ -443,7 +443,7 @@ body {
 }
 
 /* Mobile styles */
-@media (max-width: 412px){
+@media (max-width: 600px){
     .header {
         flex-direction: column;
         align-items: center;
@@ -509,7 +509,7 @@ body {
     .footer .join-pack input,
     .footer .join-pack button {
         width: 100%;
-        margin-left: 10px;
+        margin-left: 12px;
     }
     .social-icons i {
         font-size: 20px;

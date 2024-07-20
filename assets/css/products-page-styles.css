@@ -172,7 +172,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% - 240px); /* Adjust to leave space for product name */
+    height: calc(100% - 239px); /* Adjust to leave space for product name */
     opacity: 0;
     z-index: 1;
 }

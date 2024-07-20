@@ -114,18 +114,22 @@ body {
     padding: 15px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: left;
 }
 
 .banner-content {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     width: 90%;
+    margin: 0 auto;
 }
 
 .banner .text {
-    flex: 2;
+    flex: 1;
     text-align: left;
+    margin-right: 20px;
 }
 
 .banner .text h1 {
@@ -146,10 +150,11 @@ body {
 }
 
 .logo-unilever img {
-    width: 750px;
+    display: flex;
+    width: 75%;
     height: auto;
+    margin-left: auto;
 }
-
 
 .banner .logo img {
     max-width: 200px;
@@ -205,40 +210,40 @@ body {
     margin: 0 auto 20px;
 }
 
-.modern {
-    background-color: #D21885;
-    color: white;
-    padding: 20px;
+.content-section {
     display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #e6007e; 
+    color: white;
 }
 
-.modern image {
+.image-container {
     flex: 1;
-    margin-right: 300px;
 }
 
-.modern img {
-    max-width: 150%;
+.image-container img {
+    width: 100%;
     height: auto;
-    
+    display: block;
+    margin: auto;
 }
 
-.modern text {
-    flex: 1; 
-    text-align: right;
-    margin-left: 50px;
-    padding: 0;
+.text-container {
+    flex: 1;
+    padding-left: 20px;
 }
 
-.modern h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.text-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.modern p {
-    font-size: 18px; 
+.text-container p {
+    font-size: 25px;
+    margin-bottom: 10px;
 }
-
 .footer {
     background-color: #fff;
     color: #D21885;
@@ -385,6 +390,7 @@ body {
 
     .banner .logo {
         flex: 1;
+        width: 50%;
         margin-top: 20px;
     }
 
@@ -400,37 +406,13 @@ body {
     .footer .shop-now h3,
     .footer .navigation h3,
     .footer .join-pack h3 {
-        text-align: center; 
+        text-align: left; 
     }
 
-    .footer .shop-now img {
-        margin: 0 auto; 
+    .footer .navigation ul li {
+        text-align: left; 
     }
-
-    .footer .navigation ul {
-        text-align: center; 
-    }
-
-    .footer .navigation ul li a {
-        text-align: center;
-    }
-
-    .footer .join-pack p {
-        text-align: justify;
-    }
-
-    .modern {
-        flex-direction: column; 
-        text-align: center; 
-    }
-
-    .modern img {
-        max-width: 100%; 
-    }
-
-    .modern .text {
-        margin-top: 20px;
-        text-align: center;
+    .social-icons {
+        flex-direction: row; 
     }
 }
-

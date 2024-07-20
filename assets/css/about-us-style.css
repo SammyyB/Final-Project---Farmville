@@ -303,6 +303,7 @@ body {
 .footer .shop-now h3,
 .footer .sitemap h3,
 .footer .join-pack h3 {
+    font-weight: bolder;
     font-size: 18px;
     margin-bottom: 10px;
     text-align: center;
